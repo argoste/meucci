@@ -1,0 +1,41 @@
+/*
+JSON syntax in brief
+object ::= `{` string `:` value `}`
+array ::= [ `[` value [ `,` value ] `]` ]
+value ::= string | number | object | array| `true` | `false` | `null`
+string ::= `"` ( literal_character ) | ( escape_sequence ) `"`
+The object book has a value.
+This value is an array of objects
+*/
+{
+  "book": [
+    {
+      "author" : {"surname" : "Feynman", "firstname" : "Richard", "othername" : "P."},
+      "title" : "Sei pezzi facili",
+      "language" : "italian",
+      "Publisher": "Adelphi"
+    }
+    ,
+    {
+      "author": [
+                 {"surname": "Bellini", "firstname": "Alessandro" },
+                 {"surname": "Guidi", "firstname": "Andrea"}
+                 ],
+      "title": "Linguaggio C",
+      "language": "italian",
+      "Publisher": ""
+    }
+  ]
+}
+
+/*
+<div>SQL BY Michael J. Hernandez, John L. Viescas</div>
+<div>Linguaggio C BY Alessandro Bellini, Andrea Guidi</div>
+<div>HTML5 Pocket Reference BY Jennifer Robbins</div>
+<div>Tedesco Corso Completo BY Kirsten Eger</div>
+<div>Grande Atlante Mondiale BY AAVV</div>
+<div>An Approach to Electrical Science BY Henry G. Booker</div>
+<div>Promuovere se stessi BY Luisa Adani</div>
+<div>Sei pezzi facili BY Feynman</div>
+*/
+            

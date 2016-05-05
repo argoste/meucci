@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="124.17778mm"
+   height="121.35555mm"
+   viewBox="0 0 440.00001 429.99999"
+   id="svg4140"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="pergamos3.svg"
+   inkscape:export-filename="/home/ste/public_html/pergamos/pergamos.png"
+   inkscape:export-xdpi="16.26"
+   inkscape:export-ydpi="16.26">
+  <title
+     id="title4736">Lateriz project Logo</title>
+  <defs
+     id="defs4142">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect5220"
+       is_visible="true"
+       offset_points="0,1"
+       sort_points="true"
+       interpolator_type="Linear"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="round"
+       miter_limit="4"
+       end_linecap_type="zerowidth"
+       cusp_linecap_type="round" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect5148"
+       is_visible="true"
+       offset_points="0,1"
+       sort_points="true"
+       interpolator_type="Linear"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="round"
+       miter_limit="4"
+       end_linecap_type="zerowidth"
+       cusp_linecap_type="round" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect5144"
+       is_visible="true"
+       pattern="m 0,703.0315 c 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 177.16536 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="354.33073 : 177.16536 : 1"
+       inkscape:persp3d-origin="177.16537 : 118.11024 : 1"
+       id="perspective5021" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="166.72009"
+     inkscape:cy="158.51764"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-page="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="false"
+     inkscape:window-width="1868"
+     inkscape:window-height="1055"
+     inkscape:window-x="40"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-paths="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-global="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-others="false"
+     inkscape:snap-bbox-midpoints="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5197"
+       empspacing="10"
+       originx="40.000001"
+       originy="-8.6614172e-06" />
+    <sodipodi:guide
+       position="220.00001,189.99999"
+       orientation="1,0"
+       id="guide6115" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4145">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Lateriz project Logo</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Stefano Carlesso</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>to be used as a Favicon and more</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(40,-622.36221)">
+    <path
+       style="opacity:1;fill:#442c1c;fill-opacity:1;stroke:none;stroke-width:1.92920983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 220 0 L 0 70 L 0 90 L 40 90 L 40 140 L 58.285156 140 L 58.285156 146.03516 L 58.076172 146.03125 L 58.285156 146.42773 L 58.285156 146.65234 L 58.404297 146.65234 L 67.027344 163.01758 L 50.505859 400 L 40 417.87891 L 40 430 L 90.876953 430 L 92.478516 430 L 143.35547 430 L 143.35547 417.87891 L 132.84961 400 L 116.32812 163.01758 L 124.95117 146.65234 L 125.07031 146.65234 L 125.07031 146.42773 L 125.2793 146.03125 L 125.07031 146.03516 L 125.07031 140 L 309.25977 140 L 309.25977 146.03516 L 309.05078 146.03125 L 309.25977 146.42773 L 309.25977 146.65234 L 309.37891 146.65234 L 318.00195 163.01758 L 301.48047 400 L 290.97461 417.87891 L 290.97461 430 L 341.85156 430 L 343.45312 430 L 394.33008 430 L 394.33008 417.87891 L 383.82422 400 L 367.30273 163.01758 L 375.92578 146.65234 L 376.04492 146.65234 L 376.04492 146.42773 L 376.25391 146.03125 L 376.04492 146.03516 L 376.04492 140 L 395.07031 140 L 395.07031 90 L 440 90 L 440 70 L 220 0 z "
+       transform="translate(-40,622.36221)"
+       id="rect5199" />
+  </g>
+</svg>
