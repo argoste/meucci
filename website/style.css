@@ -5,10 +5,10 @@ body {
 }
 a:link {
   text-decoration: none;
-  color: #F7691D;
+  color: #3164E2;
 }
 a:visited {
-  color: #844B33;
+  color: #7B40CE;
  }
 
 figure{
@@ -34,4 +34,21 @@ embed {
 
 .screenshot {
   border: medium double black;
+}
+.bigbox {
+   border: thin solid grey;
+   margin: 4em;
+   padding: 1em;
+}
+.inline {
+  display: inline;
+  margin-left: 2em;
+}
+header {
+  border-bottom: thin dashed #7C8487;
+}
+footer {
+   position: fixed;
+   bottom: 1em;
+   border-top: thin dashed #7C8487;
 }

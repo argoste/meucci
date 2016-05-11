@@ -33,5 +33,5 @@ echo <<< INTERMEZZO
 </form>
 INTERMEZZO;
 echo $intermezzo;
-close_the_html();
+include("close_the_html.php");;
 ?>

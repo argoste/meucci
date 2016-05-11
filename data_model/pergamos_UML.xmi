@@ -1,0 +1,214 @@
+<XMI xmi.version="2.1" xmlns:UML="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+<UML:Package XMI:id="c025b146-1034-11e6-b027-5404a66cfcb5" name="Pergamos_Library" visibility="public">
+<ownedMember>
+<UML:Association XMI:id="f9bc6130-15dd-11e6-aba9-5404a66cfcb5" isDerived="False">
+<memberEnd>
+<UML:Property isStatic="False" name="+ 1..1" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="f9bc67ca-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<memberEnd>
+<UML:Property isStatic="False" name="+ 1..n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="f9bc71ac-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ 1..1" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="f9bc67ca-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ 1..n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="f9bc71ac-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+</UML:Association>
+</ownedMember>
+<ownedMember/>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="c571ed0c-1563-11e6-9502-5404a66cfcb5" name="Category or maybe Theme">
+<ownedAttribute>
+<UML:Property isStatic="False" name="ID" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="f1a3afc2-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Name" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="fb8d6ece-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+</UML:Class>
+</ownedMember>
+<ownedMember>
+<UML:Association XMI:id="2e4fbfde-1564-11e6-9502-5404a66cfcb5" isDerived="False">
+<memberEnd>
+<UML:Property isStatic="False" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="2e4fc5a6-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<memberEnd>
+<UML:Property isStatic="False" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="2e4fd082-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<ownedEnd>
+<UML:Property isStatic="False" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="2e4fc5a6-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+<ownedEnd>
+<UML:Property isStatic="False" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="2e4fd082-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+</UML:Association>
+</ownedMember>
+<ownedMember>
+<UML:Association XMI:id="1bf5133a-15e5-11e6-aba9-5404a66cfcb5" isDerived="False">
+<memberEnd>
+<UML:Property isStatic="False" name="+-name " isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="1bf5195c-15e5-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<memberEnd>
+<UML:Property isStatic="False" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="1bf52348-15e5-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+-name " isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="1bf5195c-15e5-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+<ownedEnd>
+<UML:Property isStatic="False" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="1bf52348-15e5-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+</UML:Association>
+</ownedMember>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="92c17ee0-103b-11e6-b027-5404a66cfcb5" name="Author">
+<ownedAttribute>
+<UML:Property isStatic="False" name="Code" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="cc9b1d4c-103b-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False">
+<type/>
+</UML:Property>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Surname" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="e2226378-103b-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="GivenName" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="ba5800cc-103c-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Alias" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="c03b84be-103c-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="BirthDate" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="f08db114-103c-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="BirthPlace" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="fa8887fc-103c-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="DeathDate" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="049e3a5c-103d-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="DeathPlace" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="0b1dfcaa-103d-11e6-b027-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+</UML:Class>
+</ownedMember>
+<ownedMember>
+<UML:Association XMI:id="39ee7bc8-1564-11e6-9502-5404a66cfcb5" isDerived="False">
+<memberEnd>
+<UML:Property isStatic="False" name="~ 1..2" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="39ee814a-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<memberEnd>
+<UML:Property isStatic="False" name="+ [0..n]" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="39ee8ad2-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ [0..n]" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="39ee8ad2-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="~ 1..2" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="39ee814a-1564-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+</UML:Association>
+</ownedMember>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="801e4a38-15dc-11e6-aba9-5404a66cfcb5" name="OwnedBook">
+<ownedAttribute>
+<UML:Property isStatic="False" name="InventoryNumber" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="d71dff4e-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+</UML:Class>
+</ownedMember>
+<ownedMember>
+<UML:Association XMI:id="a1111be4-15dc-11e6-aba9-5404a66cfcb5" isDerived="False">
+<memberEnd>
+<UML:Property isStatic="False" name="+ 0..1" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="a11121f2-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<memberEnd>
+<UML:Property isStatic="False" name="+ 1..n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="a1112bde-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ 0..1" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="a11121f2-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ 1..n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="a1112bde-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+</UML:Association>
+</ownedMember>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="a4468e98-15dc-11e6-aba9-5404a66cfcb5" name="Shelf"/>
+</ownedMember>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="acc835bc-15dc-11e6-aba9-5404a66cfcb5" name="Loan"/>
+</ownedMember>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="b8584c50-15dc-11e6-aba9-5404a66cfcb5" name="LibraryUser">
+<ownedAttribute>
+<UML:Property isStatic="False" name="ID" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="2592b706-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Firstname" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="294d4686-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Surname" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="32714758-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Phone" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="35d663a6-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Address" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="38d4f6a8-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Good" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="4276b48a-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False">
+<type/>
+</UML:Property>
+</ownedAttribute>
+</UML:Class>
+</ownedMember>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="ccb6f14c-15dc-11e6-aba9-5404a66cfcb5" name="Purchase">
+<ownedAttribute>
+<UML:Property isStatic="False" name="ID" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="dc6a24ce-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Date" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="e1cc438e-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Cost" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="e5a5555e-15dc-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+</UML:Class>
+</ownedMember>
+<ownedMember>
+<UML:Association XMI:id="3f0d224c-15de-11e6-aba9-5404a66cfcb5" isDerived="False">
+<memberEnd>
+<UML:Property isStatic="False" name="+ 1..n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="3f0d28be-15de-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<memberEnd>
+<UML:Property isStatic="False" name="+ 0...n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="3f0d32aa-15de-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</memberEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ 1..n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="3f0d28be-15de-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+<ownedEnd>
+<UML:Property isStatic="False" name="+ 0...n" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="3f0d32aa-15de-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedEnd>
+</UML:Association>
+</ownedMember>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember/>
+<ownedMember>
+<UML:Class isAbstract="False" XMI:id="abb0dfd6-1563-11e6-9502-5404a66cfcb5" name="PublishedBook">
+<ownedAttribute>
+<UML:Property isStatic="False" name="ID" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="bd2e1684-1563-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="Title" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="c3633912-1563-11e6-9502-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+<ownedAttribute>
+<UML:Property isStatic="False" name="ISBN" isReadOnly="False" isOrdered="True" isUnique="True" XMI:id="5b7565d0-15dd-11e6-aba9-5404a66cfcb5" isDerived="False" isDerivedUnion="False"/>
+</ownedAttribute>
+</UML:Class>
+</ownedMember>
+</UML:Package>

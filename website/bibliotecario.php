@@ -1,7 +1,7 @@
 <?php
 $page_title = "Pagina dei bibliotecari";
 require_once("common.php");
-open_the_html();
+include("open_the_html.php");;
 ?>
     <p><a href="show_catalog.php">Catalogo della biblioteca</a></p>
     <p><a href="add_book.php">Inserisci un nuovo libro.</a></p>
@@ -13,5 +13,5 @@ open_the_html();
     
     
 <?php
-close_the_html();
+include("close_the_html.php");;
 ?>
