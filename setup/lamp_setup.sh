@@ -2,7 +2,7 @@
 #This is what I did on a (virtual) computer with Ubuntu Desktop 14.04 LTS
 # Might be different for Ubuntu Server
 # This is a developemnt server not production ready
-echo "The Pergamos Library software setup"
+echo "The Meucci Library software setup"
 echo "by Stefano Carlesso"
 echo -e "\E[31;47m\
 Do you want to install LAMP? (Y or N)\

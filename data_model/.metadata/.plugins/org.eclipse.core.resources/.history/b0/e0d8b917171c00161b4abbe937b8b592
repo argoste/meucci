@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_M7OooBwSEeau6fQ3Ap9hjw" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_M7OooRwSEeau6fQ3Ap9hjw" name="diagram_compatibility_version" stringValue="1.1.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_M7OoohwSEeau6fQ3Ap9hjw"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_M7OooxwSEeau6fQ3Ap9hjw">
+      <owner xmi:type="uml:Model" href="meucci_model.uml#_M30vUBwSEeau6fQ3Ap9hjw"/>
+    </styles>
+    <element xmi:type="uml:Model" href="meucci_model.uml#_M30vUBwSEeau6fQ3Ap9hjw"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_M7crEBwSEeau6fQ3Ap9hjw" type="UseCase" name="UseCase Diagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_M7crERwSEeau6fQ3Ap9hjw" name="diagram_compatibility_version" stringValue="1.1.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_M7crEhwSEeau6fQ3Ap9hjw"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_M7crExwSEeau6fQ3Ap9hjw">
+      <owner xmi:type="uml:Model" href="meucci_model.uml#_M30vUBwSEeau6fQ3Ap9hjw"/>
+    </styles>
+    <element xmi:type="uml:Model" href="meucci_model.uml#_M30vUBwSEeau6fQ3Ap9hjw"/>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Constraint:bodyCondition">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.customizationManager">
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.customization.properties/UICustom/PropertiesContext.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.infra.nattable.modelexplorer/resources/PapyrusTable.custom"/>
+		<item value="false" key="platform:/plugin/org.eclipse.papyrus.customization.paletteconfiguration/facet/PaletteConfiguration.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.uml.modelexplorer/resource/SimpleUML.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.uml.modelexplorer/resource/StereotypeDisplay.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.views.modelexplorer/resources/OpenedPage.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.customization.properties/UICustom/PropertiesUI.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.views.modelexplorer/resources/ReadOnlyElement.custom"/>
+		<item value="true" key="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.modelexplorer/resources/PapyrusDiagram.custom"/>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Meucci_Information_System/meucci_model.uml:uml:Classifier:classifier">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Meucci_Information_System/meucci_model.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Behavior:method">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Element:annotatedElement">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Meucci_Information_System/meucci_model.uml#_kAiscBwUEeaxd7stu59dRg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Property:subsettedProperty">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Property:redefinedProperty">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__types:String:body">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Meucci_Information_System/meucci_model.uml:uml:UseCase:useCase">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Meucci_Information_System/meucci_model.uml#_BxzVwBwVEeaxd7stu59dRg"/>
+			</list>
+		</section>
+	</section>
+</section>

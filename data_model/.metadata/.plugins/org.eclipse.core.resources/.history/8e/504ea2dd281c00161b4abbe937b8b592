@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qkpZABwcEeaxd7stu59dRg" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_q7KbkBwcEeaxd7stu59dRg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_q7LCoBwcEeaxd7stu59dRg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7lQaUBwcEeaxd7stu59dRg" name="Input">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_qcYYYBwdEeaxd7stu59dRg" annotatedElement="_7lQaUBwcEeaxd7stu59dRg">
+      <body>input from user (usually by keyboard or mouse)</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_U8MNYBwdEeaxd7stu59dRg" name="Output">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_jp2UoBwdEeaxd7stu59dRg" annotatedElement="_U8MNYBwdEeaxd7stu59dRg">
+      <body>input from user (usually by keyboard or mouse)</body>
+    </ownedComment>
+  </packagedElement>
+</uml:Profile>

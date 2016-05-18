@@ -1,0 +1,14 @@
+Global.enableAnimatedLayout=false
+Global.enableAnimatedZoom=false
+Global.enableAntiAlias=false
+Global.showPopupBars=false
+Global.showStatusLine=false
+PAPYRUS_EDITOR.color.gradient=RGB {255, 255, 255};RGB {255, 255, 255};0;0
+PAPYRUS_NAVIGATION_DECORATOR_VISIBILITY=DISABLED
+PAPYRUS_NAVIGATION_DOUBLECLICK_KIND=NO_NAVIGATION
+eclipse.preferences.version=1
+print.page.height=11.692913385826772
+print.page.size=A4
+print.page.width=8.267716535433072
+print.useInches=false
+print.useMillim=true

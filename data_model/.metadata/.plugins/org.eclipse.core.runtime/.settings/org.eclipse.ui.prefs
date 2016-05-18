@@ -1,0 +1,5 @@
+DISABLE_OPEN_EDITOR_IN_PLACE=true
+SHOW_MULTIPLE_EDITOR_TABS=false
+defaultPerspectiveId=org.eclipse.papyrus.infra.core.perspective.Papyrus_mine
+eclipse.preferences.version=1
+showIntro=false

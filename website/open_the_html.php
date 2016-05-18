@@ -18,7 +18,7 @@
         alt='Semplice decorazione di una architettura Greca.'
         height='40'>
         </embed>
-      </div><div class="inline">Questa é la biblioteca Pergamos</div>
+      </div><div class="inline">Questa é la biblioteca Meucci</div>
       
     </header>
     <h1>

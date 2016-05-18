@@ -1,4 +1,4 @@
-#The Pergamos Library software manual
+#The Meucci Library software manual
 
 written by Stefano Carlesso
 
@@ -26,22 +26,22 @@ directory contained in the user home.
 	sudo lighttpd-enable-mod userdir
 	sudo service lighttpd reload
 
-Then download the pergamos distribution, unzip it and move it
+Then download the meucci distribution, unzip it and move it
 into `/home/$user/public_html/`. ( please replace $user with your username)
 
 	wget 
-	unzip pergamos.zip
-	mv pergamos /home/$user/public_html/
+	unzip meucci.zip
+	mv meucci /home/$user/public_html/
 
 Of course you can also put it in another appropriate location.
 
 Then define this variable
 
-	pergamos_dir=/home/$user/public_html/pergamos
+	meucci_dir=/home/$user/public_html/meucci
 
-Then you can simply refer in bash scripts with `$pergamos_dir`, like
+Then you can simply refer in bash scripts with `$meucci_dir`, like
 
-	echo $pergamos_dir
+	echo $meucci_dir
 
 Install and setup PHP
 
@@ -71,12 +71,12 @@ Login as mysql root (you will be asked the password you set earlier)
 
 then create the database executing the script `data_definition.sql`
 
-	source $pergamos_dir/sql/data_definition.sql
+	source $meucci_dir/sql/data_definition.sql
 
 create the user `librarian` because it is not safe to access «mysql root» from
 PHP script.
 
-	source $pergamos_dir/sql/user_creation.sql
+	source $meucci_dir/sql/user_creation.sql
 
 You can then exit from mysql command-line
 
