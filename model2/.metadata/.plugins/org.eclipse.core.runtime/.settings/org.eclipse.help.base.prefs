@@ -1,0 +1,15 @@
+always_external_browser=false
+dialog_infopop=true
+eclipse.preferences.version=1
+help_view_open_mode=in_place
+remoteHelpHost=help.eclipse.org,wiki.eclipse.org
+remoteHelpICEnabled=true,true
+remoteHelpName=Eclipse Documentation (Official),papyrus wiki
+remoteHelpOn=false
+remoteHelpPath=/mars/index.jsp,/Papyrus_User_Guide
+remoteHelpPort=80,80
+remoteHelpPreferred=false
+remoteHelpProtocol=http,http
+scope=
+search_from_browser=false
+window_infopop=true

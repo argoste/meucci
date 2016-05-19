@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<base:Annotation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:base="http://www.eclipse.org/oomph/base/1.0" source="MANUAL">
+  <references href="index:/org.eclipse.products.setup#//@products[name='org.eclipse.platform.ide']/@versions[name='latest.released']/@setupTasks.0"/>
+</base:Annotation>
