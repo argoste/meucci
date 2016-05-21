@@ -1,1 +1,0 @@
-INDEX VERSION 1.127+/home/ste/public_html/meucci/data_model/.metadata/.plugins/org.eclipse.jdt.core

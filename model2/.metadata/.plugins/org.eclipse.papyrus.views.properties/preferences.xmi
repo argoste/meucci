@@ -3,13 +3,13 @@
   <contexts name="Customization" applied="false" appliedByDefault="true"/>
   <contexts name="CSS" applied="false" appliedByDefault="true"/>
   <contexts name="style" applied="false" appliedByDefault="true"/>
-  <contexts name="notation" appliedByDefault="true"/>
+  <contexts name="notation" applied="false" appliedByDefault="true"/>
   <contexts name="synchronization" appliedByDefault="true"/>
-  <contexts name="nattable" appliedByDefault="true"/>
-  <contexts name="SysML" appliedByDefault="true"/>
-  <contexts name="UMLStereotypeApplicationExternalResource" appliedByDefault="true"/>
-  <contexts name="SequenceNotation" appliedByDefault="true"/>
-  <contexts name="Symbols" appliedByDefault="true"/>
+  <contexts name="nattable" applied="false" appliedByDefault="true"/>
+  <contexts name="SysML" applied="false" appliedByDefault="true"/>
+  <contexts name="UMLStereotypeApplicationExternalResource" applied="false" appliedByDefault="true"/>
+  <contexts name="SequenceNotation" applied="false" appliedByDefault="true"/>
+  <contexts name="Symbols" applied="false" appliedByDefault="true"/>
   <contexts name="UML" appliedByDefault="true"/>
-  <contexts name="UMLNotation" appliedByDefault="true"/>
+  <contexts name="UMLNotation" applied="false" appliedByDefault="true"/>
 </pref:Preferences>

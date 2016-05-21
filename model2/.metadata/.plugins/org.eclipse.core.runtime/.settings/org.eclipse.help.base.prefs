@@ -1,7 +1,7 @@
-always_external_browser=false
+always_external_browser=true
 dialog_infopop=true
 eclipse.preferences.version=1
-help_view_open_mode=in_place
+help_view_open_mode=in browser
 remoteHelpHost=help.eclipse.org,wiki.eclipse.org
 remoteHelpICEnabled=true,true
 remoteHelpName=Eclipse Documentation (Official),papyrus wiki
@@ -11,5 +11,5 @@ remoteHelpPort=80,80
 remoteHelpPreferred=false
 remoteHelpProtocol=http,http
 scope=
-search_from_browser=false
+search_from_browser=true
 window_infopop=true
