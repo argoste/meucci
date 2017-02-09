@@ -9521,3 +9521,1212 @@ Command-line arguments:  -data /home/ste/public_html/meucci/model2 -os linux -ws
 
 !ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-05-19 20:18:58.000
 !MESSAGE Command to fix the anchors is null
+!SESSION 2016-08-12 18:43:22.621 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=9-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -data /home/ste/public_html/meucci/model2 -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface 2 0 2016-08-12 18:43:59.816
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-12 18:43:59.816
+!MESSAGE A conflict occurred for CTRL+TAB:
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextEditor,Next Editor,
+		Switch to the next editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3aaeb65b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.papyrus.editor.nextTabCommand,Next Tab,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25f688d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-12 18:43:59.816
+!MESSAGE A conflict occurred for CTRL+SHIFT+TAB:
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousEditor,Previous Editor,
+		Switch to the previous editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b1434ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.papyrus.editor.previousTabCommand,Previous Tab,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b96ea23,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2016-08-12 18:45:41.242
+!MESSAGE org.eclipse.papyrus.gmfdiag.common.Diagram is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2016-08-12 18:45:41.343
+!MESSAGE org.eclipse.gmf.runtime.emf.type.core.default is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-08-12 18:45:46.396
+!MESSAGE Unable to create class 'org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor' from bundle '349'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NoClassDefFoundError: org/w3c/dom/css/DOMImplementationCSS
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:104)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:581)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:770)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1214)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3261)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.papyrus.infra.onefile.internal.ui.providers.PapyrusModelActionProvider$1.run(PapyrusModelActionProvider.java:158)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/css/DOMImplementationCSS
+	at java.lang.ClassLoader.defineClass1(java.base@9-internal/Native Method)
+	at java.lang.ClassLoader.defineClass(java.base@9-internal/ClassLoader.java:939)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:273)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:632)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:586)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:407)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	at java.lang.ClassLoader.defineClass1(java.base@9-internal/Native Method)
+	at java.lang.ClassLoader.defineClass(java.base@9-internal/ClassLoader.java:939)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:273)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:632)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:586)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	at org.apache.batik.dom.svg.SAXSVGDocumentFactory.<init>(Unknown Source)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.doGetSVGDocument(AbstractShapeProvider.java:195)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.getSVGDocument(AbstractShapeProvider.java:170)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.getSVGDocument(AbstractShapeProvider.java:152)
+	at org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider.doGetShapes(StyleBasedShapeProvider.java:80)
+	at org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider.getShapes(StyleBasedShapeProvider.java:72)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.GetShapesForViewOperation.execute(GetShapesForViewOperation.java:49)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.GetShapesForViewOperation.execute(GetShapesForViewOperation.java:1)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$4.execute(ExecutionStrategy.java:181)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Service.java:651)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.ShapeService.hasShapeToDisplay(ShapeService.java:70)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.NodeEditPart.refreshSVGPath(NodeEditPart.java:101)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.NodeEditPart.refreshVisuals(NodeEditPart.java:178)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.UMLNodeEditPart.refreshVisuals(UMLNodeEditPart.java:254)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.NamedElementEditPart.refreshVisuals(NamedElementEditPart.java:118)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.RoundedCompartmentEditPart.refreshVisuals(RoundedCompartmentEditPart.java:181)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:725)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:271)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.UMLNodeEditPart.refresh(UMLNodeEditPart.java:99)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.NamedElementEditPart.refresh(NamedElementEditPart.java:108)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.addChild(GraphicalEditPart.java:1319)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:271)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.PapyrusDiagramEditPart.refresh(PapyrusDiagramEditPart.java:98)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.SimpleRootEditPart.setContents(SimpleRootEditPart.java:105)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:617)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramGraphicalViewer.setContents(DiagramGraphicalViewer.java:352)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:626)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.initializeGraphicalViewerContents(DiagramEditor.java:872)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.initializeGraphicalViewer(DiagramEditor.java:865)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.initializeGraphicalViewer(DiagramEditorWithFlyOutPalette.java:116)
+	at org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor.initializeGraphicalViewer(DiagramDocumentEditor.java:174)
+	at org.eclipse.papyrus.infra.gmfdiag.common.SynchronizableGmfDiagramEditor.initializeGraphicalViewer(SynchronizableGmfDiagramEditor.java:350)
+	at org.eclipse.papyrus.uml.diagram.usecase.part.UMLDiagramEditor.initializeGraphicalViewer(UMLDiagramEditor.java:534)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.createGraphicalViewer(DiagramEditor.java:807)
+	at org.eclipse.papyrus.uml.diagram.usecase.UmlUseCaseDiagramForMultiEditor.createGraphicalViewer(UmlUseCaseDiagramForMultiEditor.java:115)
+	at org.eclipse.gef.ui.parts.GraphicalEditor.createPartControl(GraphicalEditor.java:171)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.createPartControl(DiagramEditor.java:1580)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.createPartControl(DiagramEditorWithFlyOutPalette.java:328)
+	at org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor.createPartControl(DiagramDocumentEditor.java:1514)
+	at org.eclipse.papyrus.uml.diagram.common.part.UmlGmfDiagramEditor.createPartControl(UmlGmfDiagramEditor.java:245)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.EditorPart.createEditorPartControl(EditorPart.java:297)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.EditorPart.createPartControl(EditorPart.java:199)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.createChildPart(TabFolderPart.java:1069)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.createTabItem(TabFolderPart.java:990)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.synchronize2(TabFolderPart.java:904)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.RootPart.synchronize2(RootPart.java:139)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.refreshTabsInternal(SashWindowsContainer.java:715)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.refreshTabs(SashWindowsContainer.java:669)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.createPartControl(SashWindowsContainer.java:234)
+	at org.eclipse.papyrus.infra.core.sasheditor.editor.AbstractMultiPageSashEditor.activate(AbstractMultiPageSashEditor.java:178)
+	at org.eclipse.papyrus.infra.ui.editor.CoreMultiDiagramEditor.activate(CoreMultiDiagramEditor.java:760)
+	at org.eclipse.papyrus.editor.PapyrusMultiDiagramEditor.activate(PapyrusMultiDiagramEditor.java:42)
+	at org.eclipse.papyrus.infra.core.sasheditor.editor.AbstractMultiPageSashEditor.createPartControl(AbstractMultiPageSashEditor.java:165)
+	at org.eclipse.papyrus.infra.ui.editor.CoreMultiDiagramEditor.createPartControl(CoreMultiDiagramEditor.java:486)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	... 74 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.css.DOMImplementationCSS cannot be found by org.apache.batik.dom_1.6.1.v201505192100
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:448)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	... 185 more
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 4 0 2016-08-12 18:45:47.597
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: No service registered under 'interface org.eclipse.papyrus.infra.core.sasheditor.editor.ISashWindowsContainer'
+	at org.eclipse.papyrus.infra.core.services.ServicesRegistry.getService(ServicesRegistry.java:408)
+	at org.eclipse.papyrus.infra.core.utils.AbstractServiceUtils.getService(AbstractServiceUtils.java:117)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper.refresh(DiagramHelper.java:138)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper.refreshDiagrams(DiagramHelper.java:233)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper$3.run(DiagramHelper.java:270)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4528)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4146)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+!SESSION 2016-08-12 18:48:59.418 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=9-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface 2 0 2016-08-12 18:49:17.102
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-12 18:49:17.102
+!MESSAGE A conflict occurred for CTRL+TAB:
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextEditor,Next Editor,
+		Switch to the next editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3dcc59f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.papyrus.editor.nextTabCommand,Next Tab,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61fe5253,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-12 18:49:17.102
+!MESSAGE A conflict occurred for CTRL+SHIFT+TAB:
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousEditor,Previous Editor,
+		Switch to the previous editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16b1dee7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.papyrus.editor.previousTabCommand,Previous Tab,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c683777,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2016-08-12 18:50:38.493
+!MESSAGE Invalid preference category path: org.eclipse.papyrus.infra.properties.ui.propertyview (bundle: org.eclipse.papyrus.uml.properties, page: org.eclipse.papyrus.uml.properties.multiplicityEditorProperties)
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2016-08-12 18:51:38.186
+!MESSAGE org.eclipse.papyrus.gmfdiag.common.Diagram is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2016-08-12 18:51:38.354
+!MESSAGE org.eclipse.gmf.runtime.emf.type.core.default is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-08-12 18:51:42.977
+!MESSAGE Unable to create class 'org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor' from bundle '349'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NoClassDefFoundError: org/w3c/dom/css/DOMImplementationCSS
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:581)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:770)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1214)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3261)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.papyrus.infra.onefile.internal.ui.providers.PapyrusModelActionProvider$1.run(PapyrusModelActionProvider.java:158)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/css/DOMImplementationCSS
+	at java.lang.ClassLoader.defineClass1(java.base@9-internal/Native Method)
+	at java.lang.ClassLoader.defineClass(java.base@9-internal/ClassLoader.java:939)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:273)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:632)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:586)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:407)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	at java.lang.ClassLoader.defineClass1(java.base@9-internal/Native Method)
+	at java.lang.ClassLoader.defineClass(java.base@9-internal/ClassLoader.java:939)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:273)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:632)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:586)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	at org.apache.batik.dom.svg.SAXSVGDocumentFactory.<init>(Unknown Source)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.doGetSVGDocument(AbstractShapeProvider.java:195)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.getSVGDocument(AbstractShapeProvider.java:170)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.getSVGDocument(AbstractShapeProvider.java:152)
+	at org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider.doGetShapes(StyleBasedShapeProvider.java:80)
+	at org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider.getShapes(StyleBasedShapeProvider.java:72)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.GetShapesForViewOperation.execute(GetShapesForViewOperation.java:49)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.GetShapesForViewOperation.execute(GetShapesForViewOperation.java:1)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$4.execute(ExecutionStrategy.java:181)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Service.java:651)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.ShapeService.hasShapeToDisplay(ShapeService.java:70)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.NodeEditPart.refreshSVGPath(NodeEditPart.java:101)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.NodeEditPart.refreshVisuals(NodeEditPart.java:178)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.UMLNodeEditPart.refreshVisuals(UMLNodeEditPart.java:254)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.NamedElementEditPart.refreshVisuals(NamedElementEditPart.java:118)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.RoundedCompartmentEditPart.refreshVisuals(RoundedCompartmentEditPart.java:181)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:725)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:271)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.UMLNodeEditPart.refresh(UMLNodeEditPart.java:99)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.NamedElementEditPart.refresh(NamedElementEditPart.java:108)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.addChild(GraphicalEditPart.java:1319)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:271)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.PapyrusDiagramEditPart.refresh(PapyrusDiagramEditPart.java:98)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.SimpleRootEditPart.setContents(SimpleRootEditPart.java:105)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:617)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramGraphicalViewer.setContents(DiagramGraphicalViewer.java:352)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:626)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.initializeGraphicalViewerContents(DiagramEditor.java:872)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.initializeGraphicalViewer(DiagramEditor.java:865)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.initializeGraphicalViewer(DiagramEditorWithFlyOutPalette.java:116)
+	at org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor.initializeGraphicalViewer(DiagramDocumentEditor.java:174)
+	at org.eclipse.papyrus.infra.gmfdiag.common.SynchronizableGmfDiagramEditor.initializeGraphicalViewer(SynchronizableGmfDiagramEditor.java:350)
+	at org.eclipse.papyrus.uml.diagram.usecase.part.UMLDiagramEditor.initializeGraphicalViewer(UMLDiagramEditor.java:534)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.createGraphicalViewer(DiagramEditor.java:807)
+	at org.eclipse.papyrus.uml.diagram.usecase.UmlUseCaseDiagramForMultiEditor.createGraphicalViewer(UmlUseCaseDiagramForMultiEditor.java:115)
+	at org.eclipse.gef.ui.parts.GraphicalEditor.createPartControl(GraphicalEditor.java:171)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.createPartControl(DiagramEditor.java:1580)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.createPartControl(DiagramEditorWithFlyOutPalette.java:328)
+	at org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor.createPartControl(DiagramDocumentEditor.java:1514)
+	at org.eclipse.papyrus.uml.diagram.common.part.UmlGmfDiagramEditor.createPartControl(UmlGmfDiagramEditor.java:245)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.EditorPart.createEditorPartControl(EditorPart.java:297)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.EditorPart.createPartControl(EditorPart.java:199)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.createChildPart(TabFolderPart.java:1069)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.createTabItem(TabFolderPart.java:990)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.synchronize2(TabFolderPart.java:904)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.RootPart.synchronize2(RootPart.java:139)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.refreshTabsInternal(SashWindowsContainer.java:715)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.refreshTabs(SashWindowsContainer.java:669)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.createPartControl(SashWindowsContainer.java:234)
+	at org.eclipse.papyrus.infra.core.sasheditor.editor.AbstractMultiPageSashEditor.activate(AbstractMultiPageSashEditor.java:178)
+	at org.eclipse.papyrus.infra.ui.editor.CoreMultiDiagramEditor.activate(CoreMultiDiagramEditor.java:760)
+	at org.eclipse.papyrus.editor.PapyrusMultiDiagramEditor.activate(PapyrusMultiDiagramEditor.java:42)
+	at org.eclipse.papyrus.infra.core.sasheditor.editor.AbstractMultiPageSashEditor.createPartControl(AbstractMultiPageSashEditor.java:165)
+	at org.eclipse.papyrus.infra.ui.editor.CoreMultiDiagramEditor.createPartControl(CoreMultiDiagramEditor.java:486)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	... 75 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.css.DOMImplementationCSS cannot be found by org.apache.batik.dom_1.6.1.v201505192100
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:448)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	... 186 more
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 4 0 2016-08-12 18:51:43.617
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: No service registered under 'interface org.eclipse.papyrus.infra.core.sasheditor.editor.ISashWindowsContainer'
+	at org.eclipse.papyrus.infra.core.services.ServicesRegistry.getService(ServicesRegistry.java:408)
+	at org.eclipse.papyrus.infra.core.utils.AbstractServiceUtils.getService(AbstractServiceUtils.java:117)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper.refresh(DiagramHelper.java:138)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper.refreshDiagrams(DiagramHelper.java:233)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper$3.run(DiagramHelper.java:270)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4528)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4146)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.ui.browser 2 0 2016-08-12 18:58:35.087
+!MESSAGE Internal browser is not available: No more handles [Browser style SWT.MOZILLA and Java system property org.eclipse.swt.browser.DefaultType=mozilla are not supported with GTK 3 as XULRunner is not ported for GTK 3 yet]
+
+!ENTRY org.eclipse.help 4 0 2016-08-12 18:58:50.618
+!MESSAGE Error reading help table of contents file /"org.eclipse.papyrus.views.references.doc/target/generated-eclipse-help/references-view.html, URL = jar:file:/home/ste/opt/eclipse/neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.papyrus.views.references.doc_1.2.0.201606080854.jar!/target/generated-eclipse-help/references-view.html" (skipping file)
+!STACK 0
+java.lang.ClassCastException: org.eclipse.help.internal.UAElement (in module: Unnamed Module) cannot be cast to org.eclipse.help.internal.toc.Toc (in module: Unnamed Module)
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:34)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:45)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:211)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:307)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.search.IndexingOperation.getAllDocuments(IndexingOperation.java:482)
+	at org.eclipse.help.internal.search.IndexingOperation.getAddedDocuments(IndexingOperation.java:355)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:88)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:630)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:604)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:32)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.help.base 4 4 2016-08-12 18:58:56.935
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.936
+!MESSAGE Help document /org.eclipse.papyrus.uml.diagram.common.doc/org.eclipse.papyrus.uml.diagram.common.doc/resource/DisplayStereotypes.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.936
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/Contributors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.936
+!MESSAGE Help document /org.eclipse.papyrus.cdo.ui.doc/generated-eclipse-help/start/cdo-start.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.936
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/4.3.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.936
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/Contributors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.937
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/Bug-Fixes.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.937
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/4.3.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.937
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/Updating-This-Document.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.937
+!MESSAGE Help document /org.eclipse.papyrus.infra.services.controlmode.doc/controlMode.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.939
+!MESSAGE Help document /org.eclipse.papyrus.cdo.ui.doc/generated-eclipse-help/bugs/cdo-bugs.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.940
+!MESSAGE Help document /org.eclipse.egit.doc/help/EGit/New_and_Noteworthy/4.3/Updating-This-Document.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.940
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_codeFormatter.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.940
+!MESSAGE Help document /org.eclipse.papyrus.cdo.ui.doc/generated-eclipse-help/team/cdo-team.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2016-08-12 18:58:56.940
+!MESSAGE Help document /org.eclipse.egit.doc/help/JGit/New_and_Noteworthy/4.3/Bug-Fixes.html cannot be opened.
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2016-08-12 19:01:45.312
+!MESSAGE Performing Marketplace install request from http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=114
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2016-08-12 19:01:51.749
+!MESSAGE Unable to read repository at http://pydev.org/updates/content.xml.
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make member of class sun.security.ssl.SSLSocketImpl accessible:  module java.base does not export sun.security.ssl to unnamed module @27a8f711
+	at sun.reflect.Reflection.throwInaccessibleObjectException(java.base@9-internal/Reflection.java:420)
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(java.base@9-internal/AccessibleObject.java:174)
+	at java.lang.reflect.Method.checkCanSetAccessible(java.base@9-internal/Method.java:189)
+	at java.lang.reflect.Method.setAccessible(java.base@9-internal/Method.java:183)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.SNIAwareHttpClient$1.connectSocket(SNIAwareHttpClient.java:56)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:403)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2016-08-12 19:02:03.913
+!MESSAGE Unable to read repository at http://pydev.org/updates/content.xml.
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make member of class sun.security.ssl.SSLSocketImpl accessible:  module java.base does not export sun.security.ssl to unnamed module @27a8f711
+	at sun.reflect.Reflection.throwInaccessibleObjectException(java.base@9-internal/Reflection.java:420)
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(java.base@9-internal/AccessibleObject.java:174)
+	at java.lang.reflect.Method.checkCanSetAccessible(java.base@9-internal/Method.java:189)
+	at java.lang.reflect.Method.setAccessible(java.base@9-internal/Method.java:183)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.SNIAwareHttpClient$1.connectSocket(SNIAwareHttpClient.java:56)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:403)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2016-08-12 19:02:55.960
+!MESSAGE Unable to read repository at http://pydev.org/updates/content.xml.
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make member of class sun.security.ssl.SSLSocketImpl accessible:  module java.base does not export sun.security.ssl to unnamed module @27a8f711
+	at sun.reflect.Reflection.throwInaccessibleObjectException(java.base@9-internal/Reflection.java:420)
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(java.base@9-internal/AccessibleObject.java:174)
+	at java.lang.reflect.Method.checkCanSetAccessible(java.base@9-internal/Method.java:189)
+	at java.lang.reflect.Method.setAccessible(java.base@9-internal/Method.java:183)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.SNIAwareHttpClient$1.connectSocket(SNIAwareHttpClient.java:56)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:403)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2016-08-12 19:03:09.842
+!MESSAGE Unable to read repository at http://pydev.org/updates/content.xml.
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make member of class sun.security.ssl.SSLSocketImpl accessible:  module java.base does not export sun.security.ssl to unnamed module @27a8f711
+	at sun.reflect.Reflection.throwInaccessibleObjectException(java.base@9-internal/Reflection.java:420)
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(java.base@9-internal/AccessibleObject.java:174)
+	at java.lang.reflect.Method.checkCanSetAccessible(java.base@9-internal/Method.java:189)
+	at java.lang.reflect.Method.setAccessible(java.base@9-internal/Method.java:183)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.SNIAwareHttpClient$1.connectSocket(SNIAwareHttpClient.java:56)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:403)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2016-08-12 19:03:42.032
+!MESSAGE Unable to read repository at http://pydev.org/updates/content.xml.
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make member of class sun.security.ssl.SSLSocketImpl accessible:  module java.base does not export sun.security.ssl to unnamed module @27a8f711
+	at sun.reflect.Reflection.throwInaccessibleObjectException(java.base@9-internal/Reflection.java:420)
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(java.base@9-internal/AccessibleObject.java:174)
+	at java.lang.reflect.Method.checkCanSetAccessible(java.base@9-internal/Method.java:189)
+	at java.lang.reflect.Method.setAccessible(java.base@9-internal/Method.java:183)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.SNIAwareHttpClient$1.connectSocket(SNIAwareHttpClient.java:56)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:403)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2016-08-12 19:03:50.081
+!MESSAGE Unable to read repository at http://pydev.org/updates/content.xml.
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make member of class sun.security.ssl.SSLSocketImpl accessible:  module java.base does not export sun.security.ssl to unnamed module @27a8f711
+	at sun.reflect.Reflection.throwInaccessibleObjectException(java.base@9-internal/Reflection.java:420)
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(java.base@9-internal/AccessibleObject.java:174)
+	at java.lang.reflect.Method.checkCanSetAccessible(java.base@9-internal/Method.java:189)
+	at java.lang.reflect.Method.setAccessible(java.base@9-internal/Method.java:183)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.SNIAwareHttpClient$1.connectSocket(SNIAwareHttpClient.java:56)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:403)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-08-12 19:04:46.099
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.help.ui.internal.views.HelpView.dispose(HelpView.java:74)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:238)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:394)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:212)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:170)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:84)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:111)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:470)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:144)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:927)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:846)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:841)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:112)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:918)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:846)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:841)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:825)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:880)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:846)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:841)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:825)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:880)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:846)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:841)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:825)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:880)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:846)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:841)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:825)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1976)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1598)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1188)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1170)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1112)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1453)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1450)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2658)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.restart(OpenWorkspaceAction.java:250)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.access$0(OpenWorkspaceAction.java:242)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction$WorkspaceMRUAction.run(OpenWorkspaceAction.java:91)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+!SESSION 2016-08-13 14:14:18.090 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=9-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -data /home/ste/public_html/meucci/model2 -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface 2 0 2016-08-13 14:14:34.581
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-13 14:14:34.581
+!MESSAGE A conflict occurred for CTRL+TAB:
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextEditor,Next Editor,
+		Switch to the next editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@642270ad,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.papyrus.editor.nextTabCommand,Next Tab,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@439c706,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-08-13 14:14:34.582
+!MESSAGE A conflict occurred for CTRL+SHIFT+TAB:
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousEditor,Previous Editor,
+		Switch to the previous editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17e427b6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.papyrus.editor.previousTabCommand,Previous Tab,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73344f4a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.help 4 0 2016-08-13 14:15:04.908
+!MESSAGE Error reading help table of contents file /"org.eclipse.papyrus.views.references.doc/target/generated-eclipse-help/references-view.html, URL = jar:file:/home/ste/opt/eclipse/neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.papyrus.views.references.doc_1.2.0.201606080854.jar!/target/generated-eclipse-help/references-view.html" (skipping file)
+!STACK 0
+java.lang.ClassCastException: org.eclipse.help.internal.UAElement (in module: Unnamed Module) cannot be cast to org.eclipse.help.internal.toc.Toc (in module: Unnamed Module)
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:34)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:45)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:211)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:307)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.ui.internal.views.ContextHelpPart.getTopicCategory(ContextHelpPart.java:673)
+	at org.eclipse.help.ui.internal.views.ContextHelpPart.formatHelpContext(ContextHelpPart.java:623)
+	at org.eclipse.help.ui.internal.views.ContextHelpPart.createContextHelp(ContextHelpPart.java:542)
+	at org.eclipse.help.ui.internal.views.ContextHelpPart.handleActivation(ContextHelpPart.java:334)
+	at org.eclipse.help.ui.internal.views.ContextHelpPart.setFormInput(ContextHelpPart.java:712)
+	at org.eclipse.ui.forms.ManagedForm.setInput(ManagedForm.java:210)
+	at org.eclipse.help.ui.internal.views.RelatedTopicsPart.setFormInput(RelatedTopicsPart.java:187)
+	at org.eclipse.ui.forms.ManagedForm.setInput(ManagedForm.java:210)
+	at org.eclipse.help.ui.internal.views.ReusableHelpPart.update(ReusableHelpPart.java:1158)
+	at org.eclipse.help.ui.internal.views.ReusableHelpPart.update(ReusableHelpPart.java:1144)
+	at org.eclipse.help.ui.internal.views.HelpView.handlePartActivation(HelpView.java:135)
+	at org.eclipse.help.ui.internal.views.HelpView.partActivated(HelpView.java:228)
+	at org.eclipse.ui.internal.PartService$6.run(PartService.java:149)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.PartService.partActivated(PartService.java:146)
+	at org.eclipse.ui.internal.WorkbenchPage$15.run(WorkbenchPage.java:4986)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartActivated(WorkbenchPage.java:4983)
+	at org.eclipse.ui.internal.WorkbenchPage.access$19(WorkbenchPage.java:4962)
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:210)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$3.run(PartServiceImpl.java:250)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:757)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:682)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:677)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1345)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1284)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1289)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$2(StackRenderer.java:1271)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$7.close(StackRenderer.java:1156)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1930)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:338)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2016-08-13 14:16:53.214
+!MESSAGE org.eclipse.papyrus.gmfdiag.common.Diagram is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2016-08-13 14:16:53.421
+!MESSAGE org.eclipse.gmf.runtime.emf.type.core.default is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-08-13 14:17:00.342
+!MESSAGE Unable to create class 'org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor' from bundle '349'
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NoClassDefFoundError: org/w3c/dom/css/DOMImplementationCSS
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:581)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:770)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1214)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3261)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.papyrus.infra.onefile.internal.ui.providers.PapyrusModelActionProvider$1.run(PapyrusModelActionProvider.java:158)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/css/DOMImplementationCSS
+	at java.lang.ClassLoader.defineClass1(java.base@9-internal/Native Method)
+	at java.lang.ClassLoader.defineClass(java.base@9-internal/ClassLoader.java:939)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:273)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:632)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:586)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:407)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	at java.lang.ClassLoader.defineClass1(java.base@9-internal/Native Method)
+	at java.lang.ClassLoader.defineClass(java.base@9-internal/ClassLoader.java:939)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:273)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:632)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:586)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:538)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:525)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	at org.apache.batik.dom.svg.SAXSVGDocumentFactory.<init>(Unknown Source)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.doGetSVGDocument(AbstractShapeProvider.java:195)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.getSVGDocument(AbstractShapeProvider.java:170)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.AbstractShapeProvider.getSVGDocument(AbstractShapeProvider.java:152)
+	at org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider.doGetShapes(StyleBasedShapeProvider.java:80)
+	at org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider.getShapes(StyleBasedShapeProvider.java:72)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.GetShapesForViewOperation.execute(GetShapesForViewOperation.java:49)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.GetShapesForViewOperation.execute(GetShapesForViewOperation.java:1)
+	at org.eclipse.gmf.runtime.common.core.service.ExecutionStrategy$4.execute(ExecutionStrategy.java:181)
+	at org.eclipse.gmf.runtime.common.core.service.Service.execute(Service.java:651)
+	at org.eclipse.papyrus.infra.gmfdiag.common.service.shape.ShapeService.hasShapeToDisplay(ShapeService.java:70)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.NodeEditPart.refreshSVGPath(NodeEditPart.java:101)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.NodeEditPart.refreshVisuals(NodeEditPart.java:178)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.UMLNodeEditPart.refreshVisuals(UMLNodeEditPart.java:254)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.NamedElementEditPart.refreshVisuals(NamedElementEditPart.java:118)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.RoundedCompartmentEditPart.refreshVisuals(RoundedCompartmentEditPart.java:181)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:725)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:271)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.UMLNodeEditPart.refresh(UMLNodeEditPart.java:99)
+	at org.eclipse.papyrus.uml.diagram.common.editparts.NamedElementEditPart.refresh(NamedElementEditPart.java:108)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.addChild(GraphicalEditPart.java:1319)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:271)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.papyrus.infra.gmfdiag.common.editpart.PapyrusDiagramEditPart.refresh(PapyrusDiagramEditPart.java:98)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.SimpleRootEditPart.setContents(SimpleRootEditPart.java:105)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:617)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramGraphicalViewer.setContents(DiagramGraphicalViewer.java:352)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:626)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.initializeGraphicalViewerContents(DiagramEditor.java:872)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.initializeGraphicalViewer(DiagramEditor.java:865)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.initializeGraphicalViewer(DiagramEditorWithFlyOutPalette.java:116)
+	at org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor.initializeGraphicalViewer(DiagramDocumentEditor.java:174)
+	at org.eclipse.papyrus.infra.gmfdiag.common.SynchronizableGmfDiagramEditor.initializeGraphicalViewer(SynchronizableGmfDiagramEditor.java:350)
+	at org.eclipse.papyrus.uml.diagram.usecase.part.UMLDiagramEditor.initializeGraphicalViewer(UMLDiagramEditor.java:534)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.createGraphicalViewer(DiagramEditor.java:807)
+	at org.eclipse.papyrus.uml.diagram.usecase.UmlUseCaseDiagramForMultiEditor.createGraphicalViewer(UmlUseCaseDiagramForMultiEditor.java:115)
+	at org.eclipse.gef.ui.parts.GraphicalEditor.createPartControl(GraphicalEditor.java:171)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor.createPartControl(DiagramEditor.java:1580)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditorWithFlyOutPalette.createPartControl(DiagramEditorWithFlyOutPalette.java:328)
+	at org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor.createPartControl(DiagramDocumentEditor.java:1514)
+	at org.eclipse.papyrus.uml.diagram.common.part.UmlGmfDiagramEditor.createPartControl(UmlGmfDiagramEditor.java:245)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.EditorPart.createEditorPartControl(EditorPart.java:297)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.EditorPart.createPartControl(EditorPart.java:199)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.createChildPart(TabFolderPart.java:1069)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.createTabItem(TabFolderPart.java:990)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.TabFolderPart.synchronize2(TabFolderPart.java:904)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.RootPart.synchronize2(RootPart.java:139)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.refreshTabsInternal(SashWindowsContainer.java:715)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.refreshTabs(SashWindowsContainer.java:669)
+	at org.eclipse.papyrus.infra.core.sasheditor.internal.SashWindowsContainer.createPartControl(SashWindowsContainer.java:234)
+	at org.eclipse.papyrus.infra.core.sasheditor.editor.AbstractMultiPageSashEditor.activate(AbstractMultiPageSashEditor.java:178)
+	at org.eclipse.papyrus.infra.ui.editor.CoreMultiDiagramEditor.activate(CoreMultiDiagramEditor.java:760)
+	at org.eclipse.papyrus.editor.PapyrusMultiDiagramEditor.activate(PapyrusMultiDiagramEditor.java:42)
+	at org.eclipse.papyrus.infra.core.sasheditor.editor.AbstractMultiPageSashEditor.createPartControl(AbstractMultiPageSashEditor.java:165)
+	at org.eclipse.papyrus.infra.ui.editor.CoreMultiDiagramEditor.createPartControl(CoreMultiDiagramEditor.java:486)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	... 75 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.css.DOMImplementationCSS cannot be found by org.apache.batik.dom_1.6.1.v201505192100
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:448)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:361)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:353)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(java.base@9-internal/ClassLoader.java:419)
+	... 186 more
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 4 0 2016-08-13 14:17:01.299
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: No service registered under 'interface org.eclipse.papyrus.infra.core.sasheditor.editor.ISashWindowsContainer'
+	at org.eclipse.papyrus.infra.core.services.ServicesRegistry.getService(ServicesRegistry.java:408)
+	at org.eclipse.papyrus.infra.core.utils.AbstractServiceUtils.getService(AbstractServiceUtils.java:117)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper.refresh(DiagramHelper.java:138)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper.refreshDiagrams(DiagramHelper.java:233)
+	at org.eclipse.papyrus.infra.gmfdiag.common.helper.DiagramHelper$3.run(DiagramHelper.java:270)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4528)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4146)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(java.base@9-internal/Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(java.base@9-internal/NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(java.base@9-internal/DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(java.base@9-internal/Method.java:531)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)

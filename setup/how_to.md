@@ -2,16 +2,68 @@
 
 written by Stefano Carlesso
 
+
+## Installation
+
 Feel free to use whatever platform you prefer. For the sake of simplicity I
-choose Ubuntu. To develop I used Ubuntu 14.04 with Xfce desktop (aka Xubuntu),
-Geany (text editor), Komodo Edit (text editor), Firefox, GIMP, Inkscape. The
-server software is of course GNU/Linux Ubuntu 14.04 LTS,  Lighttpd, PHP5, MySQL.
+choose Ubuntu. To develop I used Ubuntu 14.04 LTS and later Ubuntu 16.04 LTS.
+I use the Xfce desktop.
 
 TODO: add instructions for use with Apache and other platforms (MS Windows, OSX)
 
-## What I did
 
-###Server setup
+## Text editor
+
+A complicated IDE like Eclipse is not used. Instead I will use different tools
+for different jobs. Make esasier, for anybody contributing, to use the tools 
+they are used to, for as much as it is possible.
+
+I've used many different text editors, like Gedit, Geany  Komodo Edit. 
+
+
+## Web browsers
+
+Firefox and Chromium browsers.
+
+
+## Graphics
+
+GIMP and Inkscape for the graphics.
+
+
+##  
+
+
+## Version Control
+
+I used Git. The project is hosted on GitHub. Comand line tools, along with 
+git-gui.
+
+
+### Server software
+For 
+easier development I think it is better to have a server running on your local 
+machine. 
+
+You can install it as a bundle, or use a normal server installation.
+
+
+#### Server software Bundle
+
+The bundle is easier to install. It is also easier to switch on off, so it 
+won't affect too much your machine 
+performance. In other words itr is best suited for development. 
+My choice is (XAMPP)[https://www.apachefriends.org/index.html]. it exists for 
+GNU/Linux, OS X, MS Windows. 
+
+
+#### Manual install
+
+For deployment you must use a normal server installation because it is more 
+secure.
+
+The server software is of course GNU/Linux Ubuntu 14.04 LTS,  Lighttpd, PHP5, 
+MySQL.
 
 Copied form
 [lighttpd on ubuntu community help](https://help.ubuntu.com/community/lighttpd) . 
@@ -55,7 +107,7 @@ Setup the password for the special user `root` of MySQL server with
 
 
 
-###Something more interesting
+## How to use MySQL/MariaDB
 
 Now we use the mysql command line tool interactively
 
@@ -83,6 +135,7 @@ You can then exit from mysql command-line
 	exit
 
 
+## Credits
 
 I used, among the others,  the following sources of information. Thanks a lot,
 mates!
@@ -91,4 +144,7 @@ mates!
 + [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 + «Learning PHP, MySQL, JavaScript, CSS & HTML5», 3rd edition,  by Robin Nixon
 + 
+
+
+
 

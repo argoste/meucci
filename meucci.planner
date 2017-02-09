@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<project name="Meucci" company="" manager="Stefano Carlesso" phase="learn" project-start="20140101T000000Z" mrproject-version="2" calendar="1">
+  <properties>
+    <property name="my-label" type="text" owner="project" label="my_label" description="# Brief history of this project&#10;&#10;Written on 2016-05-11&#10;&#10;This project is about learning database design, UML, MySQL, PHP.&#10;&#10;And maybe make something useful for someone setting up a library.&#10;&#10;It started with the name of Meucci as a conceptual model for a library&#10;information system, with an implementation with SQLite.&#10;&#10;Then I started making a PHP + MySQL project called Pergamos. To learn how to&#10;connect a PHP website with a MySQL database. I thought I can make a generic&#10;software that could be used for any public Library.&#10;&#10;Now,  2016-05-11, I decided to just solve the problem of an hypotetic library&#10;of a small town. The name of the library is &quot;Antonio Meucci&quot; (after the&#10;inventor of the phone). I have to decide for a name for &quot;Meucci Public Library&#10;Information System&quot;. It could be somethin from ancient Greece or Rome,&#10;something about a strange machinery, or better about the community of people&#10;that forms the information system, much more important that the machinery&#10;itself. Acropolis, Polis, Pergamini, Papiro, Il Sistema Informativo Meucci (SIM&#10;or SIB).&#10;&#10;Maybe it can be useful as an example or even a template to use when setting up a&#10;public Library. Of course it should be modified, according to the particular&#10;situation of each library. "/>
+  </properties>
+  <properties>
+    <property name="my-label" value="This project is about learning database design, UML, MySQL, PHP. And maybe make something useful for someone setting up a library."/>
+  </properties>
+  <phases>
+    <phase name="learn"/>
+    <phase name="analyze_problem"/>
+    <phase name="design_solution"/>
+    <phase name="implement_solution"/>
+    <phase name="deploy_product"/>
+    <phase name="market_product"/>
+  </phases>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="revise_HTML" note="" work="5011200" start="20140101T000000Z" end="20140501T170000Z" work-start="20140101T080000Z" percent-complete="58" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="study_PHP" note="" work="38361600" start="20140501T170000Z" end="20161118T170000Z" work-start="20140502T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="3" name="prepare_tools" note="" work="28800" start="20161010T000000Z" end="20161010T170000Z" work-start="20161010T080000Z" percent-complete="80" priority="10" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20161010T000000Z"/>
+    </task>
+    <task id="4" name="study_database_design" note="" work="6163200" start="20160602T000000Z" end="20161028T170000Z" work-start="20160602T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20160602T000000Z"/>
+    </task>
+    <task id="5" name="study_Mysql" note="" work="3571200" start="20161028T170000Z" end="20170124T170000Z" work-start="20161031T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="4" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="6" name="revise_git" note="" work="28800" start="20161014T000000Z" end="20161014T170000Z" work-start="20161014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20161014T000000Z"/>
+    </task>
+    <task id="7" name="create_git_repo" note="" work="28800" start="20161015T000000Z" end="20161017T120000Z" work-start="20161017T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="6" type="SS" lag="86400"/>
+      </predecessors>
+    </task>
+    <task id="8" name="analize_the_problem" note="" work="20146500" start="20140101T000000Z" end="20160906T131500Z" work-start="20140101T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="9" name="design_a_solution" note="" work="47116800" start="20140101T000000Z" end="20170217T170000Z" work-start="20140101T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="8" type="SS"/>
+      </predecessors>
+    </task>
+    <task id="10" name="implement_the_code" note="" work="53683200" start="20140101T000000Z" end="20170727T170000Z" work-start="20140101T080000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="9" type="SS"/>
+      </predecessors>
+    </task>
+    <task id="11" name="deploy_to_remote_server" note="" work="28800" start="20170727T170000Z" end="20170728T120000Z" work-start="20170728T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="10" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Stefano Carlesso" short-name="ste" type="1" units="0" email="stefanocarlesso@gmx.com" note="" std-rate="0"/>
+    <resource id="2" name="destop computer" short-name="pegasus" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="remote web server" short-name="altervista" type="2" units="0" email="" note="I will use Altervista (Gratis) " std-rate="0"/>
+    <resource id="4" name="remote git server" short-name="github" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="11" resource-id="1" units="100"/>
+    <allocation task-id="2" resource-id="1" units="100"/>
+    <allocation task-id="4" resource-id="1" units="100"/>
+    <allocation task-id="5" resource-id="1" units="100"/>
+    <allocation task-id="10" resource-id="1" units="100"/>
+    <allocation task-id="9" resource-id="1" units="100"/>
+    <allocation task-id="8" resource-id="1" units="100"/>
+    <allocation task-id="1" resource-id="1" units="100"/>
+    <allocation task-id="7" resource-id="1" units="100"/>
+    <allocation task-id="11" resource-id="2" units="100"/>
+    <allocation task-id="9" resource-id="2" units="100"/>
+    <allocation task-id="2" resource-id="2" units="100"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="5" resource-id="2" units="100"/>
+    <allocation task-id="10" resource-id="2" units="100"/>
+    <allocation task-id="1" resource-id="2" units="100"/>
+    <allocation task-id="7" resource-id="2" units="100"/>
+  </allocations>
+</project>

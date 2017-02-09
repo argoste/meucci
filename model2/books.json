@@ -1,0 +1,75 @@
+{
+  "books": [
+    {
+      "title": "Storia dell'arte italiana",
+      "author": "Giulio Carlo Argan",
+      "pub_data": "© 1968 by G. C. Sansoni S.p.a. Firenze",
+      "subject":"94\:7",
+      "volumes": [
+        {
+          "volume": "volume primo",
+          "title": "L'antichitá"
+          },
+        {
+          "volume": "volume secondo",
+          "title": "Il Trecento e Quattrocento"
+        }
+        {
+          "volume": "volume terzo",
+          "title": "Il Cinquecento. Il Seicento. Dal Neoclessicismo al Futurismo"
+        }
+      ]
+    },
+    {
+      "title": "Le strade di Milano",
+      "title2": "Una guida alfabetica alla storia, ai segreti, all'arte, [...]",
+      "author": "Valentino De Carlo",
+      "introduzione e interventi di": "Guido Lopez",
+      "pub_data": "© 1998 Newton & Compton editori s.r.l.",
+      "subject":".910(450)\:94 ",
+      "volumes": [
+        {
+          "volume": "*",
+          "title": "A-K"
+        }
+        {
+          "volume": "**",
+          "title": "L-Z"
+        }
+      ]
+    },
+    {
+      "author" : {"surname" : "Feynman", "firstname" : "Richard", "othername" : "P."},
+      "title" : "Sei pezzi facili",
+      "language" : "italian",
+      "Publisher": "Adelphi",
+      "subject" : "53=50",
+    },
+    {
+      "author": [
+                 {"surname": "Bellini", "firstname": "Alessandro" },
+                 {"surname": "Guidi", "firstname": "Andrea"}
+                 ],
+      "title": "Linguaggio C",
+      "language": "italian",
+      "Publisher": ""
+    },
+    {"title":"SQL","author":"Michael J. Hernandez, John L. Viescas"},
+    {"title":"HTML5 Pocket Reference","author":"Jennifer Robbins"},
+    {"title":"Tedesco Corso Completo","author":"Kirsten Eger"},
+    {"title":"Grande Atlante Mondiale","author":"AAVV"},
+    {"title":"An Approach to Electrical Science","author":"Henry G. Booker"},
+    {"title":"Promuovere se stessi","author":"Luisa Adani"},
+
+      "title": "1984", 
+      "alias":"George Orwell",
+      "author": "Eric Arthur Blair",
+      "translator": "Stefano Manferlotti",
+      "original_language": "English",
+      "language": "Italian",
+      "subject": ""
+    }
+  ]
+}
+
+

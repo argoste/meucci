@@ -12,4 +12,8 @@
   <contexts name="Symbols" applied="false" appliedByDefault="true"/>
   <contexts name="UML" appliedByDefault="true"/>
   <contexts name="UMLNotation" applied="false" appliedByDefault="true"/>
+  <contexts name="welcome-general" appliedByDefault="true"/>
+  <contexts name="welcome-languages" appliedByDefault="true"/>
+  <contexts name="AdvanceStyle" applied="false"/>
+  <contexts name="welcome-diagrams"/>
 </pref:Preferences>

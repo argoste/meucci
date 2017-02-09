@@ -4,7 +4,6 @@ Global.enableAntiAlias=false
 Global.showPopupBars=false
 PAPYRUS_EDITOR.color.gradient=RGB {255, 255, 255};RGB {255, 255, 255};0;0
 eclipse.preferences.version=1
-org.eclipse.papyrus.infra.services.resourceloading.preferences.loadingStrategy=1
 print.page.height=11.692913385826772
 print.page.size=A4
 print.page.width=8.267716535433072

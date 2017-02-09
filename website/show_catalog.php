@@ -13,13 +13,21 @@ else {
 
 }
 
-//$the_query = "SELECT * FROM books";
-//$result = $connection->query($the_query);
-//while ( $row = $result->fetch_assoc() ){
-//    //id, title, series, authors, category_id
-//    echo $row['title'] . " " .  $row['authors'];
-//    echo "<br/>";
-//}
+$the_query = "SELECT * FROM books";
+$result = $connection->query($the_query);
+echo "<table>";
+while ( $row = $result->fetch_assoc() ){
+    //id, title, series, authors, category_id
+    echo "<tr>";
+    echo "<td>";
+    echo $row['title'];
+    echo "</td>";
+    echo "<td>";
+    echo $row['authors'];
+    echo "</td>";
+    echo "</tr>";
+}
+echo "</table>";
 include("close_the_html.php");;
 
 ?>

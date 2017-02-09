@@ -7,12 +7,12 @@ CREATE TABLE books (
   title VARCHAR(200),
   series VARCHAR(100),
   authors VARCHAR(200),
-  category_id FLOAT,
+  category_id ENUM,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE category (
-  id FLOAT NOT NULL,
+  id INT NOT NULL,
   name VARCHAR(100),
   PRIMARY KEY (id)
 );

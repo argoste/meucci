@@ -22,6 +22,6 @@ that forms the information system, much more important that the machinery
 itself. Acropolis, Polis, Pergamini, Papiro, Il Sistema Informativo Meucci (SIM
 or SIB).
 
-Maybe it can be useful as an example or even atemplate to use when setting up a
-public Library. Of course it should be modified, accordin to the particular
+Maybe it can be useful as an example or even a template to use when setting up a
+public Library. Of course it should be modified, according to the particular
 situation of each library. 

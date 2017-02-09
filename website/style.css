@@ -34,7 +34,7 @@ embed {
 
 .screenshot {
   border: medium double black;
-}
+}#cceff1
 .bigbox {
    border: thin solid grey;
    margin: 4em;
@@ -51,4 +51,16 @@ footer {
    position: fixed;
    bottom: 1em;
    border-top: thin dashed #7C8487;
+}
+table {
+    margin-top: 2em;
+    background-color: #666;
+    color: #690A0A;
+}
+tr {
+    background-color : 
+}
+td {
+    background-color: #fff;
+    padding: 0.6em;
 }

@@ -1,0 +1,31 @@
+/'
+http://plantuml.com/
+has support for many UML diagrams:
+    sequence
+    use case
+    class
+    activity
+    component
+    state
+    object
+It is a DRAWING tool. Written in Java and using Graphviz backend
+ for many diagram types.
+'/
+
+/'
+Relations can be
+    Extension <|--
+    strong Aggregation aka Composition *--
+    weak Aggregation o--
+Use two dots .. instead of dash to have dotted line
+'/
+@startuml
+A -- B : "association a deli"
+Customer <-- Product : "one-way association"
+Hammer <|-- CarpenterHammer : generalization
+Company o-- Subsidiary : "weak aggregation"
+Car *-- Wheel : "strong aggregation"
+' These are for  interfaces
+Specification <|.. Implementation : realization
+SiteSearch <|.. SearchService : realization
+@enduml

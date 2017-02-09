@@ -10,8 +10,8 @@ include("open_the_html.php");
 </form>
 <?php
 $connection = new mysqli($mysql_host, $mysql_user, $mysql_password, $database);
-$book_authors = test_input(  $_POST["book_authors"]  );
-$book_title = test_input(  $_POST["book_title"]  );
+$book_authors = test_input(  $_POST['book_authors']  );
+$book_title = test_input(  $_POST['book_title']  );
 $the_query = <<<QUERY
 INSERT INTO books (title, authors) VALUES (
 "$book_title"

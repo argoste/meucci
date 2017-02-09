@@ -16,6 +16,6 @@ The parts making up the project are in different directories.
 language). 
 + website: here you  can find the PHP, HTML, CSS code to deploy on your server.
 + history: brief history of the project. 
-+ model2: Analysis an design phases of the database. You find an UML model.
++ model2: Analysis and design phases of the database. You find an UML model.
 + classification_system: holds the brainstorming about the classification system
 for the books.

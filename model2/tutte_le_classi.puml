@@ -1,0 +1,93 @@
+@startuml
+class Contributore {
+    givenName
+    surname
+    alias
+}
+class Autore
+class Traduttore
+class Curatore
+class Film
+class Pubblicazione
+class Volume
+class Argomento
+class CampoDellaConoscenza
+class Monografia
+class CompactDiskAudio 
+class Sede
+class Indirizzo
+class Scaffale {
+    altezza
+}
+class Stanza
+class Copia {
+    inventoryNum
+    costoAcquisizione
+    provenienteDa
+}
+class Prestito
+class UtenteDellaBiblioteca {
+    surname
+    givenName
+    isGood: Boolean
+}
+class NumeroDiTelefono
+class CasaEditrice
+class Impiegato
+class Ruolo
+class Issue
+class Annata
+class Periodico
+
+class Collection
+
+CasaEditrice -- Pubblicazione
+Periodico --o Annata  : "weak aggregation"
+Issue --* Annata : "aggregation"
+Sede -- NumeroDiTelefono
+Sede "1"--"n" Indirizzo
+Impiegato "1"--"n" Ruolo : "ricopre"
+Impiegato -- Indirizzo
+Impiegato -- NumeroDiTelefono
+CasaEditrice -- NumeroDiTelefono
+CasaEditrice -- Indirizzo
+
+
+
+UtenteDellaBiblioteca -- NumeroDiTelefono :"contattablile a "
+UtenteDellaBiblioteca -- Indirizzo : "risiede"
+
+UtenteDellaBiblioteca "0"--"6" Prestito
+
+
+Stanza "n" --  "1" Scaffale : "si trova in"
+Prestito "1"--"1" Copia: "riferito a"
+Copia -- Pubblicazione : "una istanza di "
+
+Autore -- Contributore
+Traduttore -- Contributore
+Curatore -- Contributore
+Monografia --|> Pubblicazione : "generalization"
+CompactDiskAudio --|> Pubblicazione
+Argomento "1" -- "n" Monografia : "concerne"
+Volume "1" --o "n" Monografia
+Scaffale "1"--"1" Copia: "collocata"
+Contributore -- Pubblicazione : "contribuisce"
+Monografia -- CampoDellaConoscenza
+
+
+
+
+
+note "sto modellando una biblioteca con una sola sede" as n01
+note "detta anche opera posseduta, InventoryItem" as n02
+'note "la collocazione serve ancora?" as n03
+note "aka Classe, Categoria, Materia; vedi CDD, CDU" as n04
+
+n01 .. Sede
+n02 .. Copia
+'n03 .. Scaffale
+n04 .. CampoDellaConoscenza
+
+
+@enduml
