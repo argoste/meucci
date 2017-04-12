@@ -1,7 +1,0 @@
-@startuml
-actor user
-usecase "take book" as U1
-user --> U1
-note "at home" as N1
-N1 .. U1
-@enduml
