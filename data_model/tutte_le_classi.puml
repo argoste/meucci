@@ -13,7 +13,7 @@ class Volume
 class Argomento
 class CampoDellaConoscenza
 class Monografia
-class CompactDiskAudio 
+class CompactDiskAudio
 class Sede
 class Indirizzo
 class Scaffale {

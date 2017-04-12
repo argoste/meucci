@@ -10,5 +10,5 @@
 <div class="bigbox"><a href="progetto Pergamos">Progetto Pergamos</a></div>
 
 <?php
- include("close_the_html.php");;
+ include("close_the_html.php");
 ?>

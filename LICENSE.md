@@ -1,4 +1,7 @@
-# LICENSE
+# LICENSE for the Meucci project
 
-The Meucci project is released under GNU General Public License version 3.
-You can read it at [GNU site](https://www.gnu.org/licenses/gpl.html).
+The Meucci library project was made by [Stefano Carlesso](stefanocarlesso@gmx.com)
+
+All code is released under GNU General Public License version 2.
+
+All documentation is licensed under Creative Common CC-BY-SA.
