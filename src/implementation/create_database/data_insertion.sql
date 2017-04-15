@@ -1,7 +1,7 @@
 --MySQL syntax
 --Populating the tables
 BEGIN TRANSACTION;
-INSERT INTO books (id, title, series, authors, category_id)
+INSERT INTO monography (id, title, series, authors, category_id)
   VALUES
   (1,'SQL','I portatili','Michael J. Hernandez, John L. Viescas',0.0),
   (2,'Linguaggio C','','Alessandro Bellini, Andrea Guidi',0.0)

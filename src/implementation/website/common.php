@@ -1,7 +1,7 @@
 <?php
 $mysql_host = 'localhost';
 $mysql_user = 'librarian';
-$mysql_password = 'samovar37URS';
+$mysql_password = 'salame';
 $database = 'pergamos';
 
 function test_input($data) {

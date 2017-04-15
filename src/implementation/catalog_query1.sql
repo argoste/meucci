@@ -1,0 +1,2 @@
+USE pergamos;
+DESCRIBE author;
