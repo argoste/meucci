@@ -7,12 +7,12 @@
       "title": "Linguaggio C",""
     },
 */
-begin;
+BEGIN TRANSACTION;
 INSERT INTO monography(title) VALUES ('Linguaggio C');
 INSERT into author (completename) values ('Alessandro Bellini'),('Andrea Guidi');
 
 INSERT INTO monography_author (
-
+COMMIT;
   --MySQL syntax ONLY for reference!
   /*
   BEGIN TRANSACTION;
