@@ -9,11 +9,13 @@ $main_content = <<<MAIN
 
   <fieldset>
   <label for="monography_title">Title</label>
+      <!-- in PHP it will became a simple string -->
     <input type="text" name="monography_title">
   </fieldset>
 
   <fieldset  id="fieldset_authors">
     <legend>Authors (one for each line)</legend>
+    <!-- in PHP it will became an array of strings -->
     <div>
       <input type="text" name="author[]">
     </div>
@@ -41,6 +43,7 @@ $main_content = <<<MAIN
 
   <fieldset>
     <legend>Subject (UDC)</legend>
+        <!-- in PHP it will became an array of strings (I need to be converted to number)-->
     <div>
         <input type="checkbox" name="subject[]" value="0" id="su0">
         <label for="su0">Information sciences</label>
@@ -81,6 +84,7 @@ $main_content = <<<MAIN
 
 <fieldset>
   <label for="copies_quantity">Number of copies</label>
+      <!-- in PHP it will became strings (I need to convert it to a number)-->
     <input type="number" name="copies_quantity" value="1">
   </fieldset>
 
