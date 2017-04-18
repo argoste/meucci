@@ -1,14 +1,8 @@
 <?php
-  $page_title = "Benvenuti";
-  require_once("common.php");
-  include("open_the_html.php");
-
-?>
-
-<div class="bigbox"><a href="cittadino.php">Per gli utenti</a></div>
-<div class="bigbox"><a href="bibliotecario.php">Per i bibliotecari</a></div>
-<div class="bigbox"><a href="progetto Pergamos">Progetto Pergamos</a></div>
-
-<?php
- include("close_the_html.php");
-?>
+$page_title = "Welcome";
+//require_once("common_functions.php");
+$main_content = <<<MAIN
+<p>Address: 10, Paolo Borsellino Boulevard, Justice Town</p>
+<p>Phone: 000-50-40-30</p>
+MAIN;
+require_once('page_template.php');

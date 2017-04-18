@@ -1,0 +1,178 @@
+                                   Table "public.author"
+   Column   |          Type          |                      Modifiers                      
+------------+------------------------+-----------------------------------------------------
+ id         | integer                | not null default nextval('author_id_seq'::regclass)
+ authorname | character varying(100) | not null
+Indexes:
+    "author_pk" PRIMARY KEY, btree (id)
+Referenced by:
+    TABLE "monography_author" CONSTRAINT "monography_author_fk1" FOREIGN KEY (author_id) REFERENCES author(id)
+
+        Sequence "public.author_id_seq"
+    Column     |  Type   |        Value        
+---------------+---------+---------------------
+ sequence_name | name    | author_id_seq
+ last_value    | bigint  | 1
+ start_value   | bigint  | 1
+ increment_by  | bigint  | 1
+ max_value     | bigint  | 9223372036854775807
+ min_value     | bigint  | 1
+ cache_value   | bigint  | 1
+ log_cnt       | bigint  | 0
+ is_cycled     | boolean | f
+ is_called     | boolean | f
+Owned by: public.author.id
+
+   Index "public.author_pk"
+ Column |  Type   | Definition 
+--------+---------+------------
+ id     | integer | id
+primary key, btree, for table "public.author"
+
+    Index "public.copy_pk"
+ Column |  Type   | Definition 
+--------+---------+------------
+ id     | integer | id
+primary key, btree, for table "public.physicalcopy"
+
+                                 Table "public.monography"
+ Column |          Type          |                        Modifiers                        
+--------+------------------------+---------------------------------------------------------
+ id     | integer                | not null default nextval('monography_id_seq'::regclass)
+ title  | character varying(100) | not null
+Indexes:
+    "monography_pk" PRIMARY KEY, btree (id)
+Referenced by:
+    TABLE "physicalcopy" CONSTRAINT "copy_fk" FOREIGN KEY (monography_id) REFERENCES monography(id) ON DELETE RESTRICT
+    TABLE "monography_author" CONSTRAINT "monography_author_fk2" FOREIGN KEY (monography_id) REFERENCES monography(id) ON DELETE RESTRICT
+    TABLE "monography_subject" CONSTRAINT "monography_subject_fk1" FOREIGN KEY (monography_id) REFERENCES monography(id)
+
+                             Table "public.monography_author"
+    Column     |  Type   |                           Modifiers                            
+---------------+---------+----------------------------------------------------------------
+ id            | integer | not null default nextval('monography_author_id_seq'::regclass)
+ monography_id | integer | not null
+ author_id     | integer | not null
+Indexes:
+    "monography_author_pk" PRIMARY KEY, btree (id)
+Foreign-key constraints:
+    "monography_author_fk1" FOREIGN KEY (author_id) REFERENCES author(id)
+    "monography_author_fk2" FOREIGN KEY (monography_id) REFERENCES monography(id) ON DELETE RESTRICT
+
+     Sequence "public.monography_author_id_seq"
+    Column     |  Type   |          Value           
+---------------+---------+--------------------------
+ sequence_name | name    | monography_author_id_seq
+ last_value    | bigint  | 1
+ start_value   | bigint  | 1
+ increment_by  | bigint  | 1
+ max_value     | bigint  | 9223372036854775807
+ min_value     | bigint  | 1
+ cache_value   | bigint  | 1
+ log_cnt       | bigint  | 0
+ is_cycled     | boolean | f
+ is_called     | boolean | f
+Owned by: public.monography_author.id
+
+Index "public.monography_author_pk"
+ Column |  Type   | Definition 
+--------+---------+------------
+ id     | integer | id
+primary key, btree, for table "public.monography_author"
+
+      Sequence "public.monography_id_seq"
+    Column     |  Type   |        Value        
+---------------+---------+---------------------
+ sequence_name | name    | monography_id_seq
+ last_value    | bigint  | 1
+ start_value   | bigint  | 1
+ increment_by  | bigint  | 1
+ max_value     | bigint  | 9223372036854775807
+ min_value     | bigint  | 1
+ cache_value   | bigint  | 1
+ log_cnt       | bigint  | 0
+ is_cycled     | boolean | f
+ is_called     | boolean | f
+Owned by: public.monography.id
+
+ Index "public.monography_pk"
+ Column |  Type   | Definition 
+--------+---------+------------
+ id     | integer | id
+primary key, btree, for table "public.monography"
+
+  Table "public.monography_subject"
+    Column     |  Type   | Modifiers 
+---------------+---------+-----------
+ id            | integer | not null
+ monography_id | integer | not null
+ subject_id    | integer | not null
+Indexes:
+    "monography_subject_pk" PRIMARY KEY, btree (id)
+Foreign-key constraints:
+    "monography_subject_fk1" FOREIGN KEY (monography_id) REFERENCES monography(id)
+    "monography_subject_fk2" FOREIGN KEY (subject_id) REFERENCES subject(id)
+
+Index "public.monography_subject_pk"
+ Column |  Type   | Definition 
+--------+---------+------------
+ id     | integer | id
+primary key, btree, for table "public.monography_subject"
+
+                             Table "public.physicalcopy"
+    Column     |  Type   |                         Modifiers                         
+---------------+---------+-----------------------------------------------------------
+ id            | integer | not null default nextval('physicalcopy_id_seq'::regclass)
+ monography_id | integer | not null
+Indexes:
+    "copy_pk" PRIMARY KEY, btree (id)
+Foreign-key constraints:
+    "copy_fk" FOREIGN KEY (monography_id) REFERENCES monography(id) ON DELETE RESTRICT
+
+     Sequence "public.physicalcopy_id_seq"
+    Column     |  Type   |        Value        
+---------------+---------+---------------------
+ sequence_name | name    | physicalcopy_id_seq
+ last_value    | bigint  | 1
+ start_value   | bigint  | 1
+ increment_by  | bigint  | 1
+ max_value     | bigint  | 9223372036854775807
+ min_value     | bigint  | 1
+ cache_value   | bigint  | 1
+ log_cnt       | bigint  | 0
+ is_cycled     | boolean | f
+ is_called     | boolean | f
+Owned by: public.physicalcopy.id
+
+                                   Table "public.subject"
+   Column    |          Type          |                      Modifiers                       
+-------------+------------------------+------------------------------------------------------
+ id          | integer                | not null default nextval('subject_id_seq'::regclass)
+ subjectname | character varying(30)  | not null
+ explanation | character varying(300) | not null
+Indexes:
+    "subject_pk" PRIMARY KEY, btree (id)
+Referenced by:
+    TABLE "monography_subject" CONSTRAINT "monography_subject_fk2" FOREIGN KEY (subject_id) REFERENCES subject(id)
+
+       Sequence "public.subject_id_seq"
+    Column     |  Type   |        Value        
+---------------+---------+---------------------
+ sequence_name | name    | subject_id_seq
+ last_value    | bigint  | 1
+ start_value   | bigint  | 1
+ increment_by  | bigint  | 1
+ max_value     | bigint  | 9223372036854775807
+ min_value     | bigint  | 1
+ cache_value   | bigint  | 1
+ log_cnt       | bigint  | 0
+ is_cycled     | boolean | f
+ is_called     | boolean | f
+Owned by: public.subject.id
+
+   Index "public.subject_pk"
+ Column |  Type   | Definition 
+--------+---------+------------
+ id     | integer | id
+primary key, btree, for table "public.subject"
+

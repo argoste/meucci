@@ -31,14 +31,13 @@ CREATE TABLE author (psql
   authorname character varying(100) NOT NULL,
   CONSTRAINT author_pk PRIMARY KEY (id)
 );
-
+-- The subject is an Universal Decimal Classification Class
 CREATE TABLE subject (
   id SERIAL NOT NULL ,
-  subjectname character varying(30) NOT NULL ,
-  explanation character varying(300) NOT NULL,
+  caption character varying(1000) NOT NULL ,
   CONSTRAINT subject_pk PRIMARY KEY (id)
 );
-
+-- a specimen, a sample of  a monography
 CREATE TABLE physicalcopy (
   id SERIAL NOT NULL ,
   monography_id INTEGER NOT NULL,
