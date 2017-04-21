@@ -1,18 +1,9 @@
 <?php
-/*
-echo($_POST['monography_title']);
-echo "<br/>";
-echo( "<pre>" . var_dump($_POST['author']) . "</pre>");
-echo "<br/>";
+require_once('common_functions.php');
+meucci_connect_to_database();
+$sql = "SELECT * FROM monography;";
+$result = meucci_execute_sql($myPDO, $sql);
+echo(gettype($result) . "\n");
+meucci_disconnect_from_database();
 
-foreach($_POST['author'] as $foo) {
-  echo($foo . "<br/>");
-}
-*/
-echo "<h1>All variables given by user</h1>";
-foreach($_POST as $user_input) {
-  echo "<pre>";
-  echo var_dump($user_input);
-  echo "</pre>";
-}
 ?>

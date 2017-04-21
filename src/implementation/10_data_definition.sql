@@ -26,7 +26,7 @@ CREATE TABLE monography (
   CONSTRAINT monography_pk PRIMARY KEY (id)
 );
 
-CREATE TABLE author (psql
+CREATE TABLE author (
   id SERIAL NOT NULL,
   authorname character varying(100) NOT NULL,
   CONSTRAINT author_pk PRIMARY KEY (id)
