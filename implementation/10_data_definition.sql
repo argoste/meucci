@@ -57,7 +57,7 @@ CREATE TABLE monography_author (
 
 -- This is  a Junction table
 CREATE TABLE monography_subject (
-  id INTEGER NOT NULL ,
+  id SERIAL NOT NULL ,
   monography_id INTEGER NOT NULL ,
   subject_id INTEGER NOT NULL,
   CONSTRAINT monography_subject_pk PRIMARY KEY (id),

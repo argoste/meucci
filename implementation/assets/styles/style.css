@@ -1,0 +1,79 @@
+/* big structure */
+body {
+  margin: 0;
+  background-color: beige;
+}
+header, footer{
+  color: black;
+  padding: 0.2em 4em;
+}
+header {
+  background: linear-gradient(to bottom, azure, beige)
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+main {
+   margin: 0 20%;
+  padding: 1em 3em;
+  background: azure;
+  border-radius:2em 0;
+}
+footer {
+   margin-top: 10em;
+   background: linear-gradient(to top, azure, beige)
+}
+nav ul  > li {
+  display: inline-block;
+  background: linear-gradient(to bottom, azure, white);
+  margin: 0.3em;
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+
+/* TABLES */
+table {
+    margin-top: 2em;
+    background-color: silver;
+    color: white;
+}
+/* HTML <th> defines a cell as an header for a group of cells*/
+th  {
+  background-color: silver;
+  color: black;
+}
+td {
+    background-color: white;
+    color: black;
+    padding: 0.6em;
+}
+table caption {
+    caption-side: top;
+}
+/* Lower levels */
+a:link {
+  text-decoration: none;
+  color: brown;
+}
+a:visited {
+  color: brown;
+ }
+a:hover {
+  color: white;
+  background-color: brown;
+  /* TODO the hover effect is to be applied to the li not the a */
+}
+:required {
+  border-width: thick;
+}
+input:invalid {
+  background: hsv(50,100,50);
+}
+/* TODO add decoration url('img/pergamos3.svg') */
+
+.monitor {
+  color: white;
+  background: black;
+}

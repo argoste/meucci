@@ -1,6 +1,8 @@
 # Files to be ignored
 # Temporary and backup files
 *~
+#
+__pycache__
 # Created by https://www.gitignore.io/api/eclipse
 
 ### Eclipse ###

@@ -1,25 +1,27 @@
-header * {
-  margin: 0;
+header, footer, nav {
+  color: black;
+  background-color: beige;
+}
+header {
+  position: fixed;
+  top: 0;
 }
 footer {
    position: fixed;
-   bottom: 1em;
-}
-header, footer {
-  color: grey;
-  background-color: antiquewhite;
-  width: 100%;
+   bottom: 0;
 }
 nav {
-
+  width: 30%;
+  position: relative;
+  top: 5em;
 }
-a:link {
-  text-decoration: none;
-  color: #3164E2;
+main {
+  width: 70%;
+  position: relative;
+  left: 40%;
+  top: 4em;
+  background-color: azure;
 }
-a:visited {
-  color: #7B40CE;
- }
 table {
     margin-top: 2em;
     background-color: slategrey;
@@ -37,7 +39,13 @@ td {
 }
 
 /* TODO add decoration url('img/pergamos3.svg') */
-
+a:link {
+  text-decoration: none;
+  color: #3164E2;
+}
+a:visited {
+  color: #3164E2;
+ }
 :required {
   border-width: thick;
 }
