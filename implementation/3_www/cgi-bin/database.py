@@ -34,8 +34,6 @@ def close_session(conn):
 def show_catalog(sql_code = "SELECT * FROM monography;"):
     """Connect to RDBM and execute SQL code
     returns the result as list of tuples"""
-    # I need the "psycopg" library to use Postgresql
-    import psycopg2
     # Create a new database session and return a new connection object.
     conn = psycopg2.connect(
         host=HOST,
@@ -71,6 +69,7 @@ def add_book(monography_title, author, subject, copies_quantity):
     # I need to touch 5 tables
     #
     # TODO I need IF NOT EXIST OR SOMETHING LIKE that
+
     # TO MAKE SURE TO NOT INSERT TO TIMES THE SAME monography
     # I CAN ADD A NEW PHYSICALCOPY, THOUGH
     cur.execute("""INSERT INTO monography (title) VALUES (%s);""",

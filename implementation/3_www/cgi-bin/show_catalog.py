@@ -2,7 +2,8 @@
 import web
 import database
 web.page_title = "Complete catalog"
-result = show_catalog() # a list of tuples
+ # a list of tuples
+result = database.show_catalog()
 # very important: Python strings are immutable
 mystring = """<table>
     <caption>Meucci Catalog</caption>
