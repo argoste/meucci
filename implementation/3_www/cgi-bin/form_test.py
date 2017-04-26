@@ -10,6 +10,7 @@ form =  '''
 '''
 
 data = web.cgi.FieldStorage()
+
 if 'numero' in data:
     numero = data.getvalue(key='numero')
     message = 'Your input: ' + numero

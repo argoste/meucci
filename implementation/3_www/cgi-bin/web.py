@@ -1,7 +1,7 @@
 # this module is to create web pages in a very minimalistic style
 import cgi
 import cgitb # to debug TODO remove in production
-cgitb.enable()
+cgitb.enable(display=1, logdir='/home/ste/logs', format="text")
 
 
 # Default values to be overridden by your values
