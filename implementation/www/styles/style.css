@@ -8,11 +8,15 @@ header, footer{
   padding: 0.2em 4em;
 }
 header {
-  background: linear-gradient(to bottom, azure, beige)
+  background-color: azure;
+  background: 
+    url('/img/pergamos-small.svg') no-repeat 2% 5%,
+    linear-gradient(to bottom, azure, beige)
 }
 header h1 {
   margin: 0;
   text-align: center;
+  background-image: url(img/);
 }
 main {
    margin: 0 20%;
@@ -57,17 +61,14 @@ table caption {
     caption-side: top;
 }
 /* Lower levels */
-a:link {
+a:link, a:visited {
   text-decoration: none;
-  color: brown;
+  color: blue;
 }
-a:visited {
-  color: brown;
- }
+
 a:hover {
   color: white;
-  background-color: brown;
-  /* TODO the hover effect is to be applied to the li not the a */
+  background: blue;
 }
 :required {
   border-width: thick;
@@ -75,7 +76,7 @@ a:hover {
 input:invalid {
   background: hsv(50,100,50);
 }
-/* TODO add decoration url('img/pergamos3.svg') */
+
 
 .monitor {
   color: white;

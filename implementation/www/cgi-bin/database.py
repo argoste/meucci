@@ -57,12 +57,11 @@ def add_book(monography_title, author, subject, copies_quantity):
     # open a cursor
     cur = conn.cursor()
     #
-    # I need to touch 5 tables
     #
     # TODO I need IF NOT EXIST OR SOMETHING LIKE that
-
     # TO MAKE SURE TO NOT INSERT TO TIMES THE SAME monography
     # I CAN ADD A NEW PHYSICALCOPY, THOUGH
+    
     cur.execute("""INSERT INTO monography (title) VALUES (%s);""",
         (monography_title,)
     )

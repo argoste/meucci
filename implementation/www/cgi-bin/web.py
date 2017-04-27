@@ -1,6 +1,7 @@
 # this module is to create web pages in a very minimalistic style
 import cgi
-import cgitb # to debug TODO remove in production
+# to debug TODO remove in production
+import cgitb
 cgitb.enable(display=1, logdir='/home/ste/logs', format="text")
 
 
