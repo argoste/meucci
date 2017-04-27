@@ -9,29 +9,20 @@ DBNAME = "meucci"
 USER = "ste"
 PASSWORD = "salame"
 
-''''
-#START OF BAD CODE
-def open_session():
-    """Connect to RDBM leaving session open"""
-    # Create a new database session and return a new connection object.
-    conn = psycopg2.connect(
-        host=HOST,
-        dbname=DBNAME,
-        user=USER,
-        password=PASSWORD
-        )
-    return conn
-def close_session(conn):
-    """Close connection to RDBM"""
-    # make changes to database persistent
-    conn.commit()
-    # close cursor and connection
-    cur.close()
-    conn.close()
-#END OF BAD CODE
-'''
+def show_catalog():
+    # A simple query of the catalog
+    sql_code = '''
+    SELECT
+        monography.id,
+        monography.title,
+        physicalcopy.id
+    FROM monography, physicalcopy
+    WHERE monography.id = physicalcopy.monography_id;
+    '''
+    return extract_data(sql_code)
 
-def show_catalog(sql_code = "SELECT * FROM monography;"):
+
+def extract_data(sql_code):
     """Connect to RDBM and execute SQL code
     returns the result as list of tuples"""
     # Create a new database session and return a new connection object.
@@ -43,7 +34,7 @@ def show_catalog(sql_code = "SELECT * FROM monography;"):
         )
     # open a cursor
     cur = conn.cursor()
-    # execute some SQL
+    # execute the query
     cur.execute(sql_code)
     # The result, if exists,  is a list of tuples representing the rows
     result = cur.fetchall()

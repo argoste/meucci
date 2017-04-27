@@ -40,14 +40,18 @@ table {
     color: white;
 }
 /* HTML <th> defines a cell as an header for a group of cells*/
+th, td {
+    text-align: center;
+     padding: 0.6em;
+}
 th  {
-  background-color: silver;
+  background-color: antiquewhite;
   color: black;
 }
 td {
     background-color: white;
     color: black;
-    padding: 0.6em;
+
 }
 table caption {
     caption-side: top;

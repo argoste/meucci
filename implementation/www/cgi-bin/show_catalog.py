@@ -10,6 +10,7 @@ mystring = """<table>
     <tr>
         <th>monography.id</th>
         <th>monography.title</th>
+        <th>physicalcopy.id</th>
     </tr>"""
 for row in result:
     mystring = mystring + "<tr>\n"
