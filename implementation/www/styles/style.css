@@ -14,9 +14,10 @@ header h1 {
 }
 footer {
   background: hsl(40,30%, 75%);
-  position: absolute;
-  bottom: 0em;
+  position: static;;
+  bottom: ;
   padding: 0.2em 1em;
+  margin-top: 10%;
 }
 main {
   margin-left: 2em;

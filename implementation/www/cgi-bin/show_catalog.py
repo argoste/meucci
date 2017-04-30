@@ -3,14 +3,14 @@
 import web
 import database
 web.page_title = "Complete catalog"
-# BUG If the user enters characters outside ASCII, the RDBMS memorizes them,
-# but this script crashes
+
 sql_code = '''
     SELECT
         m.id,
         m.title,
         string_agg(DISTINCT a.authorname, ', '),
-        count(p.id) AS number_of_copies
+        count(DISTINCT p.id) AS number_of_copies,
+        array_agg(DISTINCT p.id)
     FROM physicalcopy AS p
     JOIN monography AS m
         ON p.monography_id = m.id
@@ -30,13 +30,14 @@ foo = [
     '<th>monography id</th>',
     '<th>monography title</th>',
     '<th>authors</th>',
-    '<th>physicalcopy id</th>',
+    '<th>number of copies</th>',
+    '<th>copies id</th>',
     '</tr>'
 ]
 for row in result:
     foo.append('<tr>')
     for field in row:
-        foo.extend(['<td>', str(object='field'), '</td>'])
+        foo.extend(['<td>', str(object=field), '</td>'])
     foo.append("</tr>")
 foo.append("</table>")
 

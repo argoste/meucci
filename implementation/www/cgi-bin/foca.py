@@ -3,8 +3,7 @@
 import web
 import database
 web.page_title = "Complete catalog"
-# BUG If the user enters characters outside ASCII, the RDBMS memorizes them,
-# but this script crashes 
+
 sql_code = '''
     SELECT
         m.id,

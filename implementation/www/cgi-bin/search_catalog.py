@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 import web
 import database
-# BUG If the user enters characters outside ASCII, the RDBMS memorizes them,
-# but this script crashes
 
 web.page_title = "Complete catalog"
 myfile = open('form2.html')

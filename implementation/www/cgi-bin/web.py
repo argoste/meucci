@@ -71,7 +71,7 @@ template ="""
 
 def web_page():
     """Create the HTML for a web page"""
-    print("Content-Type: text/html;charset=utf-8")
+    print("Content-Type: text/html")
     print()
     print(
         template.format(
@@ -80,5 +80,6 @@ def web_page():
             Favicon=favicon,
             Stylesheet=stylesheet,
             MainContent=main_content
-            )
+            ),
+
         )
