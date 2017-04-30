@@ -1,0 +1,63 @@
+<form action="" method="post">
+    <legend>Search a book  in the catalog (there is a bug, please enter only ASCII characters)
+    </legend>
+    <fieldset>
+        <label for="monography_title">Title</label>
+        <input type="text" name="monography_title" placeholder=''>
+    </fieldset>
+    <fieldset id="fieldset_authors">
+        <legend>Authors (one for each line)</legend>
+        <div><input type="text" name="author" placeholder=""></div>
+        <div><input type="text" name="author"></div>
+        <div><input type="text" name="author"></div>
+        <div><input type="text" name="author"></div>
+    </fieldset>
+    <fieldset>
+        <legend>Subject (first level of Universal Decimal Classification)</legend>
+        <div>
+            <input type="checkbox" name="subject" value="0" id="subject0">
+            <label for="subject0">Information sciences</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="1" id="subject1">
+            <label for="subject1">Philosophy or Psycology</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="2" id="subject2">
+            <label for="subject2">Religion</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="3" id="subject3">
+            <label for="subject3">Social sciences</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="5" id="subject5">
+            <label for="subject5">Mathematics or natural sciences</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="6" id="subject6">
+            <label for="subject6">Applied sciences, Medicine and Technology</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="7" id="subject7">
+            <label for="subject7">Arts, entertainment and Sport</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="8" id="subject8">
+            <label for="subject8">Language, Linguistics and Literature</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subject" value="9" id="subject9">
+            <label for="subject9">Geography, History and Biography</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <label for="copies_quantity">Number of copies</label>
+        <input type="number" name="copies_quantity">
+    </fieldset>
+
+    <fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+</form>

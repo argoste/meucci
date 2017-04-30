@@ -2,9 +2,17 @@
 # -*- coding: utf-8 -*-
 import web
 import database
-web.page_title = "Complete catalog"
 # BUG If the user enters characters outside ASCII, the RDBMS memorizes them,
 # but this script crashes
+
+web.page_title = "Complete catalog"
+myfile = open('form2.html')
+form = myfile.read()
+
+# TODO make everything modular, avoid repetitions
+
+# to search in the catalog, I just need to add a WHERE statement with
+# multiple OR
 sql_code = '''
     SELECT
         m.id,
@@ -36,9 +44,9 @@ foo = [
 for row in result:
     foo.append('<tr>')
     for field in row:
-        foo.extend(['<td>', str(object='field'), '</td>'])
+        foo.extend(['<td>', str(field), '</td>'])
     foo.append("</tr>")
 foo.append("</table>")
 
-web.main_content = '\n'.join(foo)
+web.main_content = form2 + '\n'.join(foo)
 web.web_page()

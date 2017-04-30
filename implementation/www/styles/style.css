@@ -1,58 +1,47 @@
 /* big structure */
 body {
   margin: 0;
-  background-color: beige;
-}
-header, footer{
-  color: black;
-  padding: 0.2em 4em;
+  background-color: hsl(80,40%, 85%);
 }
 header {
-  background-color: azure;
-  background: 
-    url('/img/pergamos-small.svg') no-repeat 2% 5%,
-    linear-gradient(to bottom, azure, beige)
+  background: linear-gradient(to top, transparent, hsl(40,35%, 80%));
+  padding: 1em 0 0 0;
 }
 header h1 {
   margin: 0;
   text-align: center;
-  background-image: url(img/);
-}
-main {
-   margin: 0 20%;
-  padding: 1em 3em;
-  background: azure;
-  border-radius:2em 0;
+  background: url('/img/pergamos-small.svg') no-repeat 2% 5%;
 }
 footer {
-   margin-top: 10em;
-   background: linear-gradient(to top, azure, beige)
+  background: hsl(40,30%, 75%);
+  position: absolute;
+  bottom: 0em;
+  padding: 0.2em 1em;
+}
+main {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+nav, nav ul {
+  margin:  0;
 }
 nav ul  > li {
   display: inline-block;
-  background: linear-gradient(to bottom, azure, white);
-  margin: 0.3em;
-  padding: 0.1em;
+  background: white;
+  margin: 0.4em;
+  padding: 0.2em;
   border-radius: 0.3em;
 }
-
 
 /* TABLES */
 table {
     margin-top: 2em;
     background-color: silver;
-    color: white;
 }
 /* HTML <th> defines a cell as an header for a group of cells*/
 th, td {
     text-align: center;
      padding: 0.6em;
-}
-th  {
-  background-color: antiquewhite;
-  color: black;
-}
-td {
     background-color: white;
     color: black;
 

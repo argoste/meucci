@@ -29,7 +29,7 @@ template ="""
         <ul>
             <li><a href="index.py">Home page</a></li>
             <li>
-                <a href="show_catalog.py">The complete catalog in one page</a>
+                <a href="show_catalog.py">Complete catalog</a>
             </li>
             <li>Search the catalog</li>
             <!--

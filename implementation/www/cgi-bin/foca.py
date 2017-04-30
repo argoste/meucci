@@ -4,7 +4,7 @@ import web
 import database
 web.page_title = "Complete catalog"
 # BUG If the user enters characters outside ASCII, the RDBMS memorizes them,
-# but this script crashes
+# but this script crashes 
 sql_code = '''
     SELECT
         m.id,
@@ -36,7 +36,7 @@ foo = [
 for row in result:
     foo.append('<tr>')
     for field in row:
-        foo.extend(['<td>', str(object='field'), '</td>'])
+        foo.extend(['<td>', str(field), '</td>'])
     foo.append("</tr>")
 foo.append("</table>")
 

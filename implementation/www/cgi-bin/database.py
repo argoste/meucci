@@ -9,20 +9,7 @@ DBNAME = "meucci"
 USER = "ste"
 PASSWORD = "salame"
 
-def show_catalog():
-    # A simple query of the catalog
-    sql_code = '''
-    SELECT
-        monography.id,
-        monography.title,
-        physicalcopy.id
-    FROM monography, physicalcopy
-    WHERE monography.id = physicalcopy.monography_id;
-    '''
-    return extract_data(sql_code)
-
-
-def extract_data(sql_code):
+def complete_query(sql_code):
     """Connect to RDBM and execute SQL code
     returns the result as list of tuples"""
     # Create a new database session and return a new connection object.
@@ -61,7 +48,7 @@ def add_book(monography_title, author, subject, copies_quantity):
     # TODO I need IF NOT EXIST OR SOMETHING LIKE that
     # TO MAKE SURE TO NOT INSERT TO TIMES THE SAME monography
     # I CAN ADD A NEW PHYSICALCOPY, THOUGH
-    
+
     cur.execute("""INSERT INTO monography (title) VALUES (%s);""",
         (monography_title,)
     )
