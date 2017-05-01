@@ -3,7 +3,7 @@ import web
 import database
 # First part of the page
 web.page_title = "Add a new book"
-myfile = open(file='form1.html', mode='r')
+myfile = open(file='../templates/form1.html', mode='r')
 form  = myfile.read()
 
 # get user_input from html form, give feedback, update user_inputbase
