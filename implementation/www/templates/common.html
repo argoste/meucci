@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <link rel='icon' href="{Favicon}">
+  <title>{PageTitle}</title>
+  <link rel="stylesheet" href="{Stylesheet}">
+</head>
+<body>
+  <header>
+    <h1>{SiteName}</h1>
+      <nav>
+        <ul>
+            <li><a href="index.py">Home page</a></li>
+            <li>
+                <a href="show_catalog.py">Complete catalog</a>
+            </li>
+            <li>Search the catalog</li>
+            <!--
+                TODO create a access privilege mechanism with login and stuff
+            -->
+            <!--Staff Members only-->
+            <li><a href="add_book.py">Add a new book</a></li>
+            <li>Register a book loan</li>
+            <li>Register a book return</li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    {MainContent}
+  </main>
+  <footer>
+    <!-- I state some facts and show some of my moral values -->
+    <div>
+      The <strong>content</strong> of this site was made by
+      <a href="mailto:stefanocarlesso@gmx.com">Stefano Carlesso</a>
+      and is released under Copyleft CC-BY-SA-NC.
+    </div>
+    <div>
+      The <strong>code</strong> that makes this site respect your freedom
+      (it is Libre Software), grab
+      <a href="https://github.com/argoste/meucci">the source</a>.
+    </div>
+    <div>
+      <!-- TODO mobile accessibility e responsive layout -->
+      The <strong>user interface</strong> sticks to W3C standards to be
+      accessible by anyone (This is a work in progress).
+    </div>
+  </footer>
+</body>
+</html>
