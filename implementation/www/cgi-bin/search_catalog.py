@@ -4,9 +4,9 @@ import web
 import database
 
 web.page_title = "Complete catalog"
-myfile = open('form2.html')
+myfile = open('../templates/form2.html')
 form = myfile.read()
-
+"""
 # TODO make everything modular, avoid repetitions
 
 # to search in the catalog, I just need to add a WHERE statement with
@@ -47,4 +47,5 @@ for row in result:
 foo.append("</table>")
 
 web.main_content = form2 + '\n'.join(foo)
+"""
 web.web_page()

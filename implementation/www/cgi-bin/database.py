@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 # This module is to use database in Python scripts
 
-# I need the "psycopg" library to use Postgresql
-import psycopg2
+# I don't need the "psycopg" library because I don't use Postgresql
+# I neet mysql.connector as explained on MySQL official page
+import mysql.connector
 # these should be constants, really
 HOST = "localhost"
-DBNAME = "meucci"
-USER = "ste"
-PASSWORD = "salame"
+DATABASE = "meucci"
+USER = "guest"
+PASSWORD = "laboratorio09"
 
 def complete_query(sql_code):
     """Connect to RDBM and execute SQL code
     returns the result as list of tuples"""
     # Create a new database session and return a new connection object.
-    conn = psycopg2.connect(
+    conn = mysql.connector.connect(
         host=HOST,
-        dbname=DBNAME,
+        database=DATABASE,
         user=USER,
         password=PASSWORD
         )
@@ -35,9 +36,9 @@ def complete_query(sql_code):
 def add_book(monography_title, author, subject, copies_quantity):
     """Complete insertion of a new book in all needed tables"""
     # Create a new database session and return a new connection object.
-    conn = psycopg2.connect(
+    conn = mysql.connector.connect(
         host=HOST,
-        dbname=DBNAME,
+        database=DATABASE,
         user=USER,
         password=PASSWORD
     )

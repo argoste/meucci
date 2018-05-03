@@ -3,7 +3,7 @@
 import web
 import database
 web.page_title = "Complete catalog"
-
+"""
 sql_code = '''
     SELECT
         m.id,
@@ -42,4 +42,6 @@ for row in result:
 foo.append("</table>")
 
 web.main_content = '\n'.join(foo)
+"""
+
 web.web_page()

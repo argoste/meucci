@@ -2,7 +2,7 @@
 -- the Universal Decimal Classification http://udcc.org/
 -- as described in their summary
 -- http://www.udcsummary.info/php/index.php
-
+USE meucci;
 INSERT INTO subject (id, caption)
 VALUES
 (0, 'SCIENCE AND KNOWLEDGE. ORGANIZATION. COMPUTER SCIENCE. INFORMATION. DOCUMENTATION. LIBRARIANSHIP. INSTITUTIONS. PUBLICATIONS'),

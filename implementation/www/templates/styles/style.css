@@ -1,0 +1,80 @@
+/* big structure */
+body {
+  margin: 0;
+  background-color: hsl(80,40%, 85%);
+}
+header {
+  background: linear-gradient(to top, transparent, hsl(40,35%, 80%));
+  padding: 1em 0 0 0;
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+  background: url('/img/pergamos-small.svg') no-repeat 2% 5%;
+}
+footer {
+  background: hsl(40,30%, 75%);
+  position: static;;
+  bottom: ;
+  padding: 0.2em 1em;
+  margin-top: 10%;
+}
+main {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+nav, nav ul {
+  margin:  0;
+}
+nav ul  > li {
+  display: inline-block;
+  background: white;
+  margin: 0.4em;
+  padding: 0.2em;
+  border-radius: 0.3em;
+}
+
+/* TABLES */
+table {
+    margin-top: 2em;
+    background-color: silver;
+}
+/* HTML <th> defines a cell as an header for a group of cells*/
+th, td {
+    text-align: center;
+     padding: 0.6em;
+    background-color: white;
+    color: black;
+
+}
+table caption {
+    caption-side: top;
+}
+/* Lower levels */
+a:link, a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: white;
+  background: blue;
+}
+:required {
+  border-width: thick;
+}
+input:invalid {
+  background: hsv(50,100,50);
+}
+
+
+.monitor {
+  color: white;
+  background: black;
+}
+input[type='text'] {
+    width: 90%;
+}
+input[type='number'] {
+    width: 3em;
+}
